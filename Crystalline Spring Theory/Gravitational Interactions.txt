@@ -1,0 +1,187 @@
+Gravitational Interactions in Modified Theories of Gravity: A Focus on Long-range Monopole-like Couplings
+\keywords{Gravitational waves, Cosmology, Modified gravity, Long-range couplings}
+\maketitle
+\section{Introduction}
+
+gravitational interaction between massive objects arises from their mutual influence on a pervasive background monopole field permeating space. It has been proposed as an explanation for the observed acceleration of the expansion of the universe without resorting to dark energy. The model also provides a mechanism for the generation of primordial magnetic fields during inflation.}
+
+\keywords{Gravitational waves -- Cosmology: theory -- Early universe}
+\maketitle
+
+%-------------------------------------------------------------------
+
+\section{Introduction}\label{s:intro}
+
+The discovery of gravitational waves (GWs) by LIGO~\citep{Abbott:2016blz} has opened up an entirely new window on the cosmos, allowing us to probe extreme environments and phenomena that are inaccessible to electromagnetic observations. As we gain experience with GW astronomy, it is likely that this field will yield many surprises and unveil previously unknown aspects of gravity.
+
+In particular, there may be opportunities to test general relativity in regimes where its predictions differ from those of alternative theories. For example, some modified gravity models predict deviations from the standard waveform emitted by compact binary inspirals \citep[e.g.,][]{Barausse:2015jra}. Other modifications could manifest as additional polarizations or frequency-dependent features in GW signals \citep[e.g.,][]{Baker:2009kw,Berti:2015itd}. 
+
+One particularly interesting possibility is that certain classes of modified gravity theories allow for coupling between GWs and matter through a non-minimal interaction term $\mathcal{L}_{gw-matter}$ in the action~\citep[see e.g.][]{Damour:1992we,Damour:1993hw,Sotiriou:2008rp,Sotiriou_2008,Gleyzes_2014,Fay_2020}. This would lead to novel effects such as radiation reaction forces acting on massive objects due to their emission of gravitational radiation~\citep[e.g.,][]{Foffa_2020}, or even modification of fundamental constants like $c$ and $\hbar$ via backreaction effects~\citep[][]{Sotiriou_2008,Pani_2011b,Maggiore_PRL,Maggiore_PRD,LiuPRD15,LiuPRL16,Khoury17,Hu18,Hu19,Capozziello20}. 
+
+Here we explore one specific scenario where these types of interactions could have observable consequences---namely, if they give rise to long-range monopole-like gravitational couplings between astrophysical bodies. Such interactions would violate local Lorentz symmetry but not necessarily global symmetries like parity or time reversal.
+
+We consider two distinct scenarios which illustrate how these long-range couplings might arise:
+
+{\bf Scenario 1:} The first possibility is that the modified gravity action contains a term $\mathcal{L}_{gw-matter} = \xi G_{\mu\nu}\tilde{T}^{\mu\nu}$, where $G_{\mu\nu}$ is the Einstein tensor and $\tilde{T}^{\mu\nu}$ represents an energy-momentum tensor for GWs. This introduces a non-minimal coupling between gravitational waves and matter through the dimensionless parameter $\xi$. For example, in scalar-tensor theories this can be motivated by considering a general Lagrangian of the form
+%
+\begin{equation}
+    \mathcal{L}_S = f(R) + g(\phi)R - V(\phi) - \frac{\xi}{2}\left(G_{\mu\nu}\tilde{T}^{\mu\nu}\right)^2,
+    \label{eq:LagrangianScalarTensor}
+\end{equation}
+%
+where $f(R)$ and $g(\phi)$ are functions of curvature invariants or scalar fields respectively, while $V(\phi)$ describes potential terms. 
+
+The presence of such couplings could lead to long-range monopole-like interactions between massive objects mediated by GWs propagating through space~\citep[see e.g.][]{Damour:1993hw,Sotiriou_2008}. These would violate local Lorentz symmetry but not necessarily global symmetries like parity or time reversal.
+
+For instance, if we take 
+%
+$$
+\xi = c^{-4},
+$$
+%
+then under spatial inversion ($x^\prime_\alpha = x_\alpha$), time reversal ($t^\prime = -t$), and parity ($x^\prime_\alpha = -x_\alpha$), we have 
+%
+$$
+G(x,t)\rightarrow G(-x,-t),
+$$
+%  
+which preserves spacetime translation invariance but violates Lorentz symmetry. However, under combined spatial inversion followed by parity transformation (i.e., $(+,-,+,-)$ rotation):
+%
+$$
+G(x,t)\rightarrow G(-x,-t).
+$$
+
+This shows that although these monopole-type interactions arise from purely gravitational effects with no explicit violation of global symmetries like parity or time-reversal, they nevertheless exhibit anomalous behavior under certain combinations thereof.
+
+In addition to leading to observable deviations from standard predictions for binary inspirals~\citep[e.g.,][]{Foffa_2020}, these long-range monopole interactions could also affect the dynamics of binary black hole mergers. For example, they may lead to a non-negligible gravitational recoil imparted on the final merged object~\citep{Foffa:2019jxa}. This would manifest as an observable shift in the merger rate inferred from GW observations.
+
+{\bf Scenario 2:} The second possibility is that there are additional terms $\mathcal{L}_{gw-matter} = \xi_{ij}\partial_\mu G^{\mu\nu}\tilde{T}_i^\nu$ and $\mathcal{L}_{gw-matter} = \xi'_{ij}\partial_\mu G'^{\mu\nu}\tilde{T}_i^\nu$, where $G'^{\mu\nu}$ is another tensor field representing gravitational waves. These introduce new sources for modified gravity effects through coupling between GWs and matter via derivatives of the metric perturbations.
+
+For instance, if we consider a scenario with two scalar fields $\phi_1$ and $\phi_2$ coupled to gravity through Lagrangians
+%
+$$
+\mathcal{L}_1 = -\frac12 g(\phi)R + V(\phi),
+$$
+%
+and 
+%
+$$
+\mathcal{L}_2 = -\frac12 f(R)\nabla^2H,
+$$  
+%
+where $H$ represents a spatially homogeneous Hubble expansion scale factor, then under time-reversal symmetry ($t^\prime=-t$), we have 
+%
+$$
+g(\phi)R(x,t)\rightarrow f(R)\nabla^2H(-x,-t).
+$$
+
+This shows that although these monopole-type interactions arise from purely gravitational effects with no explicit violation of global symmetries like parity or time-reversal, they nevertheless exhibit anomalous behavior under certain combinations thereof.
+
+In addition to leading to observable deviations from standard predictions for binary inspirals~\citep[e.g.,][]{Baker:2009kw,Berti:2015itd}, these long-range monopole interactions could also affect the dynamics of binary black hole mergers. For example, they may lead to a non-negligible gravitational recoil imparted on the final merged object~\citep[see e.g.][]{Capozziello20}. This would manifest as an observable shift in the merger rate inferred from GW observations.
+
+
+%-------------------------------------------------------------------
+
+We now proceed to quantify the strength of these long-range monopole interactions and estimate their potential observable consequences. We begin by deriving expressions for the GW-matter coupling coefficients $\xi$ and $\xi'$ in terms of parameters governing modified gravity models, followed by estimates of their magnitudes.
+
+%-------------------------------------------------------------------
+
+\section{Deriving Coupling Coefficients}\label{s:couplings}
+
+We first consider scenario 1 where the action contains a non-minimal coupling between gravitational waves and matter through an effective energy-momentum tensor:
+%
+$$
+\mathcal{L}_{gw-matter} = \xi G_{\mu\nu}\tilde{T}^{\mu\nu},
+$$
+%
+where $G_{\mu\nu}$ is the Einstein tensor, $\tilde{T}^{\mu\nu}$ represents an energy-momentum tensor for gravitational waves, and $\xi$ is a dimensionless parameter quantifying the strength of this interaction. 
+
+For simplicity we will focus on scalar-tensor theories with a general Lagrangian density given by Eq.~(\ref{eq:LagrangianScalarTensor}). This can be motivated as follows:
+
+The most general form consistent with diffeomorphism invariance allows us to write 
+%
+$$
+S = \int d^{4}x \sqrt{-g}\left[\frac{R}{2\kappa^2}-f(R)-V(\phi)-g(\phi)R-\frac{\xi}{2}(G_{\alpha\beta}\tilde{T}^{\alpha\beta})^2 - V'(\phi)\right],
+$$  
+%
+where $f(R)$ describes curvature invariant terms, $V(\phi)$ represents potential contributions from scalar fields (e.g., inflaton), while $g(\phi)$ encodes modifications to gravity at large scales due to additional scalars or higher derivative corrections.
+
+Here we have introduced a second scalar field $\phi$, which could represent e.g., another inflaton candidate that couples differently than $\Phi$. The prime denotes differentiation with respect to its argument. Finally, $(G_{\alpha \beta})^{2}$ indicates contraction over indices using both tensors.
+
+This model has two free parameters---$\kappa^{-2}$ representing Newton's constant in units of Planck mass squared ($M_P$), and one other dimensionless parameter controlling deviations from General Relativity (GR). In addition there are three free functions---the potentials $V$, $V'$; and function(s) describing derivatives of curvature-invariants $f(R)$ and/or higher derivative corrections $g(\phi)$. 
+
+We can now write down the effective energy-momentum tensor for gravitational waves as
+%
+$$
+\tilde{T}_{\mu\nu} = \frac{2}{\sqrt{-g}}\frac{\delta (\sqrt{-g}\mathcal{L}_{gw})}{\delta g^{\mu\nu}},
+$$  
+%
+where $\mathcal{L}_{gw}$ is the Lagrangian density for gravitational waves. Using Eq.~(\ref{eq:LagrangianScalarTensor}), we have 
+%
+$$
+G_{\alpha \beta}(x)\tilde{T}^{\alpha \beta}(x) = -4\xi G(x,t)(G_{00}(x,t))^{2},
+$$  
+% 
+where $G(x,t)$ represents metric perturbations, while $(G_{00})^{2}$ denotes contraction of indices using both tensors.
+
+Substituting this into our general action yields an expression relating the coupling parameter $\xi$ to model parameters:
+%
+$$
+\xi = 8M_P^{-4}\left[\kappa^{-2}V' + fR + 3gf'' - V'' - 6gf'\right],
+$$  
+%
+
+Here we have defined dimensionless quantities by rescaling lengths with Planck length ($l_P=1/\sqrt{\kappa^2 M_P^2}$), time with inverse Hubble scale ($t_H=H_0^{-1/2}=c/H$), and masses with reduced Planck mass ($m_p=M_P/\sqrt{8 \pi}=m_pc^3/G_N$). The curvature invariants are normalized such that their values at early times are comparable to those today (e.g., $R(t_0)/M_p^2\simeq R(t_i)/M_p^2$, where subscript ``0" refers to present day).
+
+The function coefficients appearing in this expression depend on details of the modified gravity theory under consideration. For example, if we take a specific scalar-tensor theory described by Eqs.~(\ref{eq:LagrangianScalarTensor})-(\ref{eq:Potentials}), then these functions become:
+
+For potentials describing single-field inflationary models:
+%
+\vspace*{-5mm}
+%   
+    $$V=\Lambda e^{-a t}, ~~~ V'=a(1-e^{-at}).~~~~~~~
+    $$
+
+For two-field inflationary models:
+%
+\vspace*{-5mm}
+%   
+    $$V_1=\Lambda e^{-a_1 t}, ~~~ V'_1=a_1(1-e^{-a_1t}),$$
+    
+    $$V_2=\Lambda e^{-a_2 t}, ~~~ V'_2=a_2(1-e^{-a_2t}).~~~~~
+    $$
+  
+For a single-field model with an exponential potential and slow-roll parameters $\epsilon$ and $\eta$:
+%
+\vspace*{-5mm}
+%   
+    $$V=e^{\alpha \phi} \left[ 3\epsilon - \frac{3}{4}\eta + O(\epsilon^2, \eta^2) \right],$$
+
+    $$V' = 6\alpha e^\phi (\epsilon - \eta),$$
+
+In the above expressions, we have defined dimensionless quantities by rescaling lengths with Planck length ($l_P=H_p=c/\sqrt{8\pi G_N}$), time with inverse Hubble scale ($t_H=H_p^{-1/2}=c/H$, where $H_p$ is the present value of Hubble parameter), masses with reduced Planck mass ($m_p=M_P/\sqrt{8\pi}=m_pc^3/G_N$). The curvature invariants are normalized such that their values at early times are comparable to those today (e.g., $R(t_i)/M_p^2\simeq R(t_f)/M_p^2$, where subscript ``0" refers to present day).
+
+The function coefficients appearing in this expression depend on details of the modified gravity theory under consideration. For example, if we take a specific scalar-tensor theory described by Eqs.~(\ref{eq:LagrangianScalarTensor})-(\ref{eq:Potentials}), then these functions become:
+
+For potentials describing single-field inflationary models:
+%
+\vspace*{-5mm}
+%   
+   $$f(R)=R-24M_P^{4}\left[\kappa^{4}V''+6g(R)V'\right]~~~~~,
+   $$
+ 
+For two-field inflationary models:
+%
+\vspace*{-5mm}
+%   
+   $$f(R)=R-24M_P^{4}\left[\kappa^{4}(V_{11}'')+(g_{11}+g_{12})(V_{11}')+(g_{21}+g_{22})(V'') + 2(g_{11}+g_{12})(V')\right]~~~~~,
+   $$
+   
+For a single-field model with an exponential potential and slow-roll parameters $\epsilon$ and $\eta$:
+%
+\vspace*{-5mm}
+%   
+    $$f(R)=R-24M_P^{4}\left[\kappa^{4}(3\epsilon - \frac{3}{4}\eta) + O(\epsilon^2, \eta^2)\right]~~~~~.
+    $$
+  
+In the above expressions, we have defined dimensionless quantities by rescaling lengths with Planck length ($l_P=H_p=c/\sqrt{8\pi G_N}$), time with inverse Hubble scale ($t_H=H_p^{-1/2}=c/H$, where $H_p$ is the present value of Hubble parameter), masses with reduced Planck mass ($m_p=M_P/\sqrt{8\pi}=m_pc^3/G_N$). The curvature invariants are normalized such that their values at early times are comparable to those today (e.g., $R(t_i)/M_p^2\simeq R(t_f)/M_p^2$, where subscript ``0" refers to present day).

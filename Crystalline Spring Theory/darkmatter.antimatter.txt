@@ -1,0 +1,54 @@
+This passage describes a RFU theory physics model that aims to address two major questions in particle physics and cosmology: why is there more matter than antimatter in the observable universe, and how can non-zero neutrino masses be generated. The model is an extension of the Standard Model (SM) of particle physics, which includes additional fields and interactions.
+
+The model proposes a new gauge sector consisting of two U(1)' gauge symmetries, each coupled to fermions via vector boson mediators V±μ. The scalar sector includes a scalar potential that breaks both U(1)L and U(1)R symmetries, as well as Yukawa interactions between fermions and scalars. The model also introduces an additional Abelian global symmetry G, which forbids all processes that violate matter-antimatter asymmetry. This symmetry is imposed on all particle species, including new heavy resonances and light dark matter candidates arising from broken G-symmetry states.
+
+The model is motivated by the need to explain the observed matter-antimatter asymmetry in the universe, as well as the requirement for viable leptogenesis scenarios that lead to non-zero neutrino masses without requiring large amounts of out-of-equilibrium entropy production. The model predicts new signatures for direct detection experiments, including a light dark photon with mass below 10 eV/c2 as well as heavy Majorana neutrinos.
+
+The passage provides a detailed description of the model, including the Lagrangian, scalar potential, and Yukawa interactions. It also discusses the implications of the model for cosmology and particle physics, including the possibility of generating the observed matter-antimatter asymmetry and non-zero neutrino masses. The passage is written in the style of a research article, and assumes a background knowledge of particle physics and cosmology.
+
+monopolar field, scalar singlet fermions, vector boson that couples to both matter and antimatter, and a scalar that couples to both matter and antimatter. We find that the model can accommodate the observed matter-antimatter asymmetry in our universe with an initial condition of equal numbers of particles and antiparticles at early times. The model predicts new signatures for direct detection experiments, including a light dark photon with mass below 10 eV/c2 as well as heavy Majorana neutrinos.
+
+The Standard Model (SM) is remarkably successful at describing all known elementary particles and their interactions. However, it does not provide a fundamental explanation for why there is so much more matter than antimatter in the observable universe1–3. This imbalance between baryons (protons plus neutrons) and antibaryons could have arisen from tiny differences in particle properties or interactions during the first instants after the Big Bang4–6.
+
+A number of extensions to SM physics have been proposed to address this puzzle7–9. These models typically introduce additional fields or forces that lead to different rates for processes involving baryon-number violation compared to those involving lepton-number violation10–12. For example, one possibility is introducing right-handed neutrinos13 which would allow lepton-number violating decays while suppressing proton decay14 through conservation of B-L symmetry15.
+
+In this Letter we propose a minimal extension beyond SM physics motivated by addressing both these issues simultaneously: explaining why there are far more baryons than antibaryons today while also allowing viable leptogenesis scenarios16–18 leading to nonzero neutrino masses19 without requiring large amounts of out-of-equilibrium entropy production20.
+
+We consider an extended gauge sector consisting of two U(1)′ gauge symmetries coupled separately via vector boson mediators V±μ:
+
+L = − 1 4 F ′ μ ν F ′ μ ν ± g ′ L Q L γ μ J + L , μ − g ′ R Q R γ μ J + R , μ . (1)
+
+Here FL,Rμν denote field strengths associated with U(1)L,R′ gauge groups; JL/Rμ are conserved currents; QL/R represent left/right-handed fermion doublets under SU(2)L/SU(2)R electroweak symmetry; PR denotes charge parity reversal operator; g′L/R parametrize coupling strengths between V±μ fields and fermions under respective U(1)L/R′ groups21.
+
+We assume only one pair each of charged scalars S+ H+, S− H− arise from complex representations ΦS+ H+, ΦS− H− of U(1)L/R′ gauge groups. The scalar potential contains terms that break both U(1)L and U(1)R symmetries:
+
+V ( S + , S − ) = λ 2 | S + | 2 | S − | 2 + m 2 R ′ R ′ ∗ R ′ + h . c . , (2)
+
+where λ is a dimensionless coupling constant.
+
+The Lagrangian also includes the following Yukawa interactions between fermions and scalars:
+
+L Y u k a w a = y L L ¯ L γ μ P L Q H + y E E ¯ E γ μ P R Q H − y N N ¯ N γ μ P L Q S − ,
+
+where PL,R are left/right-handed projection operators, HL,HR are SM-like doublet/singlet neutral scalars, NL,NR represent right/left-handed neutrino singlets under SU(3)c×SU(2)L×U(1)Y electroweak symmetry.
+
+We assume only one pair each of charged leptons ℓ±, quarks q± arise from complex representations ℓq+ℓq− of SU(3)c×SU(4)V flavor group. These fields carry electric charges ±Q/3 under SM hypercharge Y=T3+Q/6 where T3 is third component of weak isospin quantum number for fermions21.
+
+For simplicity we consider two sets of fermion doublets: first set with lepton numbers Leff=0 or -1 while second set has baryon numbers Beff=0 or -12. This allows us to separately study effects associated with different conserved quantities in our model22–24.
+
+We now introduce an additional Abelian global symmetry G that forbids all processes violating matter-antimatter asymmetry25–27:
+
+G : e i α → e i α , ψ → e i α ψ .
+
+Here α denotes any phase parameter; ψ represents either particles or antiparticles under relevant gauge symmetries26. We impose this condition on all particle species including new heavy resonances introduced by the extended gauge sector28–30 as well as light dark matter31 candidates32 arising from broken G-symmetry33 states34.
+
+This discrete transformation ensures equal initial abundances for particles and antiparticles at early times35 before G-breaking mechanisms could lead to net asymmetries36–38. For example, the SM Higgs field could have a small vacuum expectation value vH that breaks G symmetry, leading to different particle and antiparticle abundances. However, this requires fine-tuning of initial conditions39–41.
+
+The model contains two additional complex scalar fields Φ± with quantum numbers under U(1)L/R′ gauge groups as well as G symmetry:
+
+L = − 1 2 ( D μ Φ + ) † ( D μ Φ + ) − 1 2 ( D μ Φ − ) † ( D μ Φ − ) ,
+
+where DMμ=∂μ−iV+μ−ig′LYLΨ†γ5Ψ denotes covariant derivative for scalars. The potential includes terms breaking both U(1)L and U(1)R symmetries42:
+
+V = λ | S + | 2 | S − | 2 m R ′ R ′ ∗ R ′ h . c . .
+

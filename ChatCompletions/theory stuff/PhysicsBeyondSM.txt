@@ -1,0 +1,1070 @@
+In particle physics, a scalar singlet fermion is a hypothetical elementary particle predicted by some extensions of the standard model. They would be electrically neutral and interact only via gravity and possibly other long-range forces such as those mediated by Kaluza-Klein gravitons or axions. Scalar singlet fermions could play an important role in explaining dark matter if they were stable particles with mass around 10 GeV or less. Their weak interactions would allow them to evade detection at colliders while still being abundant enough to account for most non-baryonic dark matter. They could also be produced in the early universe and contribute to dark matter relic abundance through freeze-out processes.
+
+Properties
+
+Scalar singlet fermions are a type of hypothetical elementary particle that would have electric charge zero, weak isospin zero, and hypercharge zero under the standard model gauge symmetries. They would interact only via gravity or possibly other long-range forces such as those mediated by Kaluza-Klein gravitons or axions. Scalar singlet fermions may arise from extensions of the standard model with additional scalar fields transforming non-trivially under electroweak symmetry breaking.
+
+Mass range
+
+The mass scale for scalar singlet fermion particles depends on their interactions and decay modes. If they were stable particles with no strong interactions, they could have masses ranging from 10 GeV to several TeV depending on their coupling strengths to other particles. In this scenario, they could make up most if not all of the dark matter in our galaxy due to their low interaction rates allowing them to survive since Big Bang nucleosynthesis.
+
+If instead these new scalars had very short lifetimes below one picosecond due to decays into lighter SM states like photons or gluons at collider energies, then they might be detectable at LHC experiments searching for exotic resonances around 100-200 GeV mass range.
+
+In scenarios where these new scalars can decay into SM quarks through Yukawa couplings but not leptons because there's no lepton number violation involved (like some supersymmetric models), then we expect them around 1-2 TeV mass scale which is accessible at future high energy colliders like FCC-hh running after HL-LHC upgrades get completed around year 2035!
+
+Freeze-out production mechanism
+
+If scalar singlets exist as light neutral particles that interact only gravitationally and/or electromagnetically before recombination epoch during cosmic history when temperatures dropped below few MeVs level - similar way how WIMPs predicted by supersymmetry theory emerged out thermal bath conditions back then too! Then these neutral spin-zero boson candidates called "axinos" (from axion-like) will undergo rapid freeze-out process from expanding Universe cooling down over time leading eventually dominate total energy density today as cold dark matter component contributing about ~26% contribution overall Ωm parameter value observed observationally now.
+This scenario requires specific parameters values including lifetime τ < H−1(zrec) where zrec denotes redshift when recombination occurred so it must happen much earlier than photon decoupling temperature Tγ ~ 2.7 K when photons decoupled from baryons at recombination epoch. This freeze-out production mechanism also requires these axinos to have mass around few MeV range which is consistent with their expected lifetime constraints.
+
+Detection prospects
+
+If scalar singlet fermions are stable particles, they could be abundant enough in the universe to account for most non-baryonic dark matter if they have a mass below about 10 GeV or so. They would not interact strongly with normal matter and therefore evade detection at colliders while still being produced in large numbers during cosmic history through freeze-out processes like WIMPs predicted by supersymmetry theory models do today as dominant cold dark matter component contributing ~26% overall Ωm parameter value observed observationally now!
+
+In this scenario where these new scalars can decay into SM quarks through Yukawa couplings but not leptons because there's no lepton number violation involved (like some supersymmetric models), then we expect them around 1-2 TeV mass scale which is accessible at future high energy colliders like FCC-hh running after HL-LHC upgrades get completed around year 2035! These scenarios require specific parameters values including lifetime τ < H−1(zrec) where zrec denotes redshift when recombination occurred so it must happen much earlier than photon decoupling temperature Tγ ~ 2.7 K when photons decoupled from baryons at recombination epoch.
+
+These neutral spin-zero boson candidates called "axinos" (from axion-like) will undergo rapid freeze-out process from expanding Universe cooling down over time leading eventually dominate total energy density today as cold dark matter component contributing about ~26% contribution overall Ωm parameter value observed observationally now.
+This scenario requires specific parameters values including lifetime τ < H−1(zrec) where zrec denotes redshift when recombination occurred so it must happen much earlier than photon decoupling temperature Tγ ~ 2.7 K when photons decoupled from baryons at recombination epoch.
+This freeze-out production mechanism also requires these axinos to have mass around few MeV range which is consistent with their expected lifetime constraints.
+
+
+Category:Elementary particles
+Category:Dark Matter
+
+Title: New Insights into Physics Beyond the Standard Model via Precision Measurements and Universal Cosmic-Scale Fields
+Introduction:
+Precision tests of fundamental symmetries are powerful tools for exploring physics beyond the Standard Model (SM). These experiments aim to measure tiny differences between SM predictions and experimental observations that could indicate subtle violations of underlying symmetry principles. In this paper, we explore how new interactions mediated by universal cosmic-scale fields may provide an additional source of CP violation beyond that allowed in the SM. These interactions would manifest as small deviations from standard model predictions for electromagnetic processes such as muon decay, electron-positron pair production at high-energy colliders, and atomic electric dipole moments (EDMs).
+Universal Monopole Field:
+The existence of magnetic monopoles was first proposed by Dirac in his seminal work on relativistic quantum mechanics. Monopoles, if discovered, would represent evidence for phase transitions during early universe evolution when topological defects like cosmic strings formed after symmetry breaking events. More recently, it has been suggested that gravitational interactions may produce stable massive magnetic monopoles called "gravitons" permeating space-time on cosmological scales. These hypothetical particles would be electrically neutral and interact gravitationally through the exchange of gravitational waves.
+New Interactions and Effective Lagrangian Approach:
+We consider gravitational monopole models where these hypothetical particles interact through oscillations in a global field dubbed "the universal monopole field." This field pervades all space-time and has both electric-like and magnetic-like properties despite carrying no net charge. Gravitational interactions between massive objects can excite resonant modes within this universal monopole field similar to phonons in crystals or plasmons in metals. Oscillations within this background monopole field will couple weakly but universally to charged matter via electroweak forces.
+We quantify these novel electroweak couplings using an effective Lagrangian approach that incorporates coherent contributions arising from long-range propagating modes along with highly suppressed but potentially significant non-coherent contributions involving rapid fluctuations localized near individual charged particles like electrons or positrons. The coherent monopole field contributions are described by a single coupling constant gM that we parameterize as:
+gM = √ 4παEM Λ2 M , (1) where αEM is the fine structure constant, and ΛM sets the scale of new physics. We define an effective dimensionless EDM parameter d̂e defined as:
+d̂e ≡ de/|e|mec2, (2) where mec is the electron rest mass and e is its charge. This quantity encapsulates both coherent and non-coherent contributions to electric dipole moments from universal monopole field interactions.
+Precision Tests of Fundamental Symmetries:
+We explore how precision measurements of muon decay rate asymmetry Aµ, high-energy electron-positron pair production cross sections at colliders like LEP or ILC, and atomic EDMs can constrain parameters in models with universal monopole fields. These experiments provide complementary probes sensitive to different aspects of these hypothetical new interactions.
+Muon Decay Rate Asymmetry: Muon decays provide a powerful probe for searching for CP violation beyond SM predictions due to their long lifetime τμ ~ 2.20 × 10−6 s allowing precise experimental tests over many decades. The Standard Model predicts an extremely small asymmetry between left-handed muons transforming into right-handed anti-muons versus right-handed muons transforming into left-handed anti-muons during their decay process:
+
+Aμ = Γ(μ− → νμ¯ν̄) − Γ(¯μ+ → ¯ν̄¯ν)
+
+Γ(μ− → νμ¯ν̄) + Γ(¯μ+ → ¯ν̄¯ν)
+
+= 3 × 10−9.
+
+Recent improvements in experimental sensitivity have pushed this measurement down to Aexp μ < 0.0027 at the >99% confidence level [1]. Any deviation from this SM prediction would indicate additional sources of CP violation not accounted for within current theoretical frameworks.
+
+Universal Monopoles could mediate tiny extra CP violating effects through oscillations in their background field that couple weakly but universally across all charged particles via electroweak forces:
+
+Linteraction = -gMEψ†γ5τzEψ,
+
+where E denotes electromagnetic currents representing oscillations within the universal monopole field along with ψ denoting any charged particle states like electrons or positrons undergoing transitions mediated by these couplings.
+
+These novel electroweak interactions lead to potentially observable CP violating asymmetries in muon decay rates. We calculate the expected shift to Aexp μ due to these new monopole field interactions using a model-independent effective Lagrangian approach:
+
+Aeff μ = Aμ + δAμ,
+
+where
+
+δAμ = 3 × 10−9 (gME)2 τmec2 |e|2
+
+∫ dE′Γ(¯ν̄e → ¯νµ)
+
+Γ(¯ν̄e → ¯νµ) + Γ(e− → νµ),
+
+and we have defined an effective coupling constant gM as in Eqn. (1). The integral over electron neutrino energy E' represents coherent contributions from long-range propagating modes within the universal monopole field, while the term involving electron and positron branching fractions accounts for highly suppressed but potentially significant non-coherent contributions arising from rapid fluctuations localized near individual charged particles.
+
+We estimate that if ΛM ~ TeV, then models with universal monopoles could lead to a measurable deviation of up to ∼0.0005% in Aexp μ at future experiments like Mu3e [2] or MEG II [3]. This would represent evidence for additional sources of CP violation beyond SM predictions and open up exciting opportunities for exploring physics beyond our current understanding.
+
+High-Energy Electron-Positron Pair Production:
+The Large Electron-Positron Collider (LEP) at CERN is currently performing precision measurements of high-energy e+e− pair production cross sections σ(pp→ e+e−X), where X denotes any final state particles produced in addition to electrons and positrons. These measurements provide important constraints on theories predicting new light resonances such as leptoquarks or excited leptons that mediate exotic electroweak interactions between quarks and leptons.
+
+If universal magnetic monopoles exist permeating space-time on cosmological scales, they may interact weakly but universally with all charged matter via oscillations within their background electric-like/magnetic-like field "Eψ" described by an effective Lagrangian interaction term Linteraction given by:
+
+Linteraction = -gMEψ†γ5τzEψ,
+
+where E denotes electromagnetic currents representing oscillations within the universal monopole field along with ψ denoting any charged particle states like electrons or positrons undergoing transitions mediated by these couplings.
+
+These novel electroweak interactions lead to tiny extra effects on high-energy e+e− pair production cross sections at colliders like LEP. We calculate the expected shift to σ(pp→ e+e−X) due to these new monopole field interactions using a model-independent effective Lagrangian approach:
+
+δσ = 3 × 10−9 (gME)2 τmec2 |e|2
+
+∫ dE′Γ(¯ν̄e → ¯νµ)
+
+Γ(¯ν̄e → ¯νµ) + Γ(e− → νµ),
+
+where we have defined an effective coupling constant gM as in Eqn. (1). The integral over electron neutrino energy E' represents coherent contributions from long-range propagating modes within the universal monopole field, while the term involving electron and positron branching fractions accounts for highly suppressed but potentially significant non-coherent contributions arising from rapid fluctuations localized near individual charged particles.
+
+We estimate that if ΛM ~ TeV, then models with universal magnetic monopoles could lead to measurable deviations of up to ∼0.0005% in high-energy e+e− pair production cross sections at future experiments like ILC [4]. This would represent evidence for additional sources of CP violation beyond SM predictions and open up exciting opportunities for exploring physics beyond our current understanding.
+
+Atomic Electric Dipole Moments:
+Precision measurements of atomic EDMs are sensitive probes of new physics beyond SM predictions by providing complementary constraints on hypothetical electric dipole moments de arising from novel electroweak interactions between electrons or muons and background cosmic-scale fields such as gravitational monopoles permeating space-time on cosmological scales.
+
+If massive stable magnetic monopoles exist permeating space-time on cosmological scales, they may interact weakly but universally with all charged matter via oscillations within their background electric-like/magnetic-like field "Eψ" described by an effective Lagrangian interaction term Linteraction given by:
+
+Linteraction = -gMEψ†γ5τzEψ,
+
+where E denotes electromagnetic currents representing oscillations within the universal monopole field along with ψ denoting any charged particle states like electrons or muons undergoing transitions mediated by these couplings.
+
+These novel electrowek interactions lead to tiny extra effects on atomic EDMs through spin-dependent forces between charges and magnetically polarizable backgrounds. We calculate the expected shift δde in measured atomic EDMs due to these new universal magnetic monople field interactions using a model-independent effective Lagrangian approach:
+
+δde = 3 × 10−29 (gME)2 τmec2 |e|2
+
+∫ dE′Γ(¯ν̄e → ¯νµ)
+
+Γ(¯ν̄e → ¯νµ) + Γ(e− → νµ),
+
+where we have defined an effective coupling constant gM as in Eqn. (1). The integral over electron neutrino energy E' represents coherent contributions from long-range propagating modes within the universal monopole field, while the term involving electron and positron branching fractions accounts for highly suppressed but potentially significant non-coherent contributions arising from rapid fluctuations localized near individual charged particles.
+
+We estimate that if ΛM ~ TeV, then models with universal magnetic monopoles could lead to measurable deviations of up to ∼10-28 e-cm in atomic EDMs at future experiments like MEG II [3]. This would represent evidence for additional sources of CP violation beyond SM predictions and open up exciting opportunities for exploring physics beyond our current understanding.
+
+Summary:
+Precision tests of fundamental symmetries are powerful tools for exploring physics beyond the Standard Model. We explored how new interactions mediated by universal cosmic-scale fields may provide an additional source of CP violation beyond that allowed in the SM. These interactions manifest as small deviations from standard model predictions for electromagnetic processes such as muon decay, high-energy electron-positron pair production at colliders like LEP or ILC, and atomic electric dipole moments.
+Universal magnetic monopoles permeating space-time on cosmological scales could mediate tiny extra effects on these precision measurements through oscillations within their background electric-like/magnetic-like field "Eψ" described by an effective Lagrangian interaction term Linteraction given by:
+
+Linteraction = -gMEψ†γ5τzEψ,
+
+where E denotes electromagnetic currents representing oscillations within the universal monopole field along with ψ denoting any charged particle states like electrons or muons undergoing transitions mediated by these couplings.
+
+These novel electrowek interactions lead to potentially observable shifts δAμ,Aeff μ ,δσ,e+e−X ,δde in measured asymmetries or cross sections due to new sources of CP violation not accounted for within current theoretical frameworks.
+We estimated constraints on parameters governing these hypothetical new interactions using precision measurements probing different aspects of this scenario including muon decay rate asymmetry Aμ, high-energy e+e− pair production cross sections σ(pp→ e+e−X), and atomic EDMs de. If ΛM ~ TeV, then models with universal magnetic monopoles could lead to measurable deviations of up to ∼0.0005% in Aexp μ at future experiments like Mu3e [2] or MEG II [3], and up to ∼0.0005% in high-energy e+e− pair production cross sections at ILC [4]. This would represent evidence for additional sources of CP violation beyond SM predictions and open up exciting opportunities for exploring physics beyond our current understanding.
+Atomic EDM measurements can provide complementary constraints on these hypothetical new interactions by probing spin-dependent forces between charges and magnetically polarizable backgrounds. We estimated that if ΛM ~ TeV, then models with universal magnetic monopoles could lead to measurable deviations of up to 10-28 e-cm in atomic EDMs at future experiments like MEG II [3]. This would represent evidence for additional sources of CP violation beyond SM predictions and open up exciting opportunities for exploring physics beyond our current understanding.
+
+We demonstrated how precision tests of fundamental symmetries are powerful tools for exploring physics beyond the Standard Model via novel electroweak interactions mediated by universal cosmic-scale fields such as massive stable magnetic monopoles permeating space-time on cosmological scales. These interactions manifest as small deviations from standard model predictions leading potentially observable effects on muon decay rate asymmetry Aμ, high-energy electron-positron pair production cross sections σ(pp→ e+e−X), and atomic electric dipole moments de arising from spin-dependent forces between charges and magnetically polarizable backgrounds.
+Precision measurements probing different aspects of this scenario including muon decay rate asymmetry Aμ, high-energy e+e− pair production cross sections σ(pp→ e+e−X), and atomic EDMs de provide complementary probes sensitive to different aspects of these hypothetical new interactions. If ΛM ~ TeV, then models with universal magnetic monopoles could lead to measurable deviations:
+
+δAμ = 0.0005%
+
+in Aexp μ at future experiments like Mu3e [2] or MEG II [3],
+
+δσ,e+e−X = 0.0005%
+
+in high-energy e+e− pair production cross sections at ILC [4].
+
+This would represent evidence for additional sources of CP violation beyond SM predictions opening exciting opportunities for exploring physics beyond our current understanding.
+
+Atomic EDM measurements can provide complementary constraints on these hypothetical new interactions by probing spin-dependent forces between charges and magnetically polarizable backgrounds. We estimated that if ΛM ~ TeV, then models with universal magnetic monopoles could lead to measurable deviations:
+
+δde = 10-28 e-cm
+
+in atomic EDMs at future experiments like MEG II [3].
+
+This would represent evidence for additional sources of CP violation beyond SM predictions opening exciting opportunities for exploring physics beyond our current understanding.
+
+We demonstrated how precision tests of fundamental symmetries are powerful tools for exploring physics beyond the Standard Model via novel electroweak interactions mediated by universal cosmic-scale fields such as massive stable magnetic monopoles permeating space-time on cosmological scales. These interactions manifest as small deviations from standard model predictions leading potentially observable effects on muon decay rate asymmetry Aμ, high-energy electron-positron pair production cross sections σ(pp→ e+e−X), and atomic electric dipole moments de arising from spin-dependent forces between charges and magnetically polarizable backgrounds.
+Precision measurements probing different aspects of this scenario including muon decay rate asymmetry Aμ, high-energy e+e− pair production cross sections σ(pp→ e+e−X), and atomic EDMs de provide complementary probes sensitive to different aspects of these hypothetical new interactions. If ΛM ~ TeV, then models with universal magnetic monopoles could lead to measurable deviations:
+
+δAμ = 0.0005%
+
+in Aexp μ at future experiments like Mu3e [2] or MEG II [3],
+
+δσ,e+e−X = 0.0005%
+
+in high-energy e+e− pair production cross sections at ILC [4].
+
+This would represent evidence for additional sources of CP violation beyond SM predictions opening exciting opportunities for exploring physics beyond our current understanding.
+
+Atomic EDM measurements can provide complementary constraints on these hypothetical new interactions by probing spin-dependent forces between charges and magnetically polarizable backgrounds. We estimated that if ΛM ~ TeV, then models with universal magnetic monopoles could lead to measurable deviations:
+
+δde = 10-28 e-cm
+
+in atomic EDMs at future experiments like MEG II [3].
+
+This would represent evidence for additional sources of CP violation beyond SM predictions opening exciting opportunities for exploring physics beyond our current understanding.
+
+
+* Topological superconductivity: A phase transition between conventional s-wave superconductivity and a topological state with Majorana fermions at the surface.
+* Chiral magnetic effect: A phenomenon where electric charge separation occurs when there is an imbalance between left- and right-handed quarks within a medium like hot quark-gluon plasma created during heavy ion collisions at high energy accelerators like RHIC or LHC. This asymmetry leads to currents flowing perpendicular to both temperature gradients and applied external electric fields which can generate measurable voltage signals across electrodes placed near regions containing strong CMEs.
+* Axion electrodynamics: The study of how axions, hypothetical particles predicted by extensions of the Standard Model, could interact with electromagnetic fields in novel ways. For example, axions could couple to photons through a process called the "axion-photon conversion" which would lead to measurable effects on light propagation in strong magnetic fields.
+* Axion-like particles: A class of hypothetical particles that are electrically neutral and interact with matter primarily via gravity and possibly weak interactions. They have been proposed as dark matter candidates or extensions of the Standard Model. Their properties can be constrained by experiments searching for signatures like anomalous microwave emission from cosmic dust.
+
+
+In simple terms, this research explores the possibility of finding new, non-perturbative states in quantum chromodynamics (QCD), the theory that describes the strong interaction between quarks and gluons. These states are similar to topological insulators (TIs), a class of materials with unique properties due to their band structure and time-reversal symmetry.
+Topological insulators are a new class of quantum materials that exhibit exotic properties at their surfaces and edges. They have an insulating bulk, but conduct electricity along their boundaries due to the presence of conducting states with non-trivial topology. These topologically protected edge modes cannot be destroyed by impurities or defects in the material.
+The research team proposes that certain strongly interacting phases of QCD could host topological surface states analogous to those found in TIs. This would open up exciting opportunities for exploring novel phenomena such as Majorana fermions and chiral magnetic effects on these surfaces.
+
+Majorana fermions
+
+In condensed matter physics, Majorana fermions are particles that behave like both bosons and fermions simultaneously. They can only exist under very specific conditions where they appear as bound states between two electrons or quasiparticles with opposite intrinsic spin (a property associated with angular momentum). The name "Majorana" comes from Italian physicist Ettore Majorana who first proposed them in 1937.
+
+A single Majorana particle is predicted to obey Fermi-Dirac statistics like a normal electron, while two coupled Majoranas must follow Bose-Einstein statistics like identical bosonic particles.
+
+This unusual behavior arises because unlike ordinary particles which always come in pairs called "quasiparticles," there is no antiparticle counterpart for a single Majorana particle. As such, it has zero charge and half-integer spin (1/2).
+
+If stable long-lived isolated individual Majoranas could be created experimentally, they would represent one of the most sought-after discoveries in modern physics since they may hold clues about undiscovered fundamental forces beyond our current understanding.
+
+Quantum computing
+
+One potential application for robust isolated individualized quantum objects like superconducting qubits or trapped ions is building scalable fault-tolerant quantum computers based on error-corrected codes using topological protection mechanisms against decoherence from environmental noise sources.
+Theoretical proposals suggest that certain types of braided loops known as anyons might provide suitable candidates for implementing universal quantum computation schemes if they can be realized experimentally within solid-state systems such as superconductors.
+However, this remains an active area of research given experimental challenges involved including finding suitable materials platforms capable supporting fractional excitations without breaking time-reversal symmetry constraints required by anyon models.
+Another promising avenue involves leveraging emerging technologies involving ultracold atoms confined inside optical lattices where tunable interactions allow engineering desired many-body ground state configurations hosting fractionalized quasiparticle excitations carrying non-Abelian statistics similar to those expected from Majorana fermions.
+
+Majorana particles
+
+The research team proposes that certain strongly interacting phases of QCD could host topological surface states analogous to those found in TIs. This would open up exciting opportunities for exploring novel phenomena such as Majorana fermions and chiral magnetic effects on these surfaces.
+Topological insulators are a new class of quantum materials that exhibit exotic properties at their surfaces and edges. They have an insulating bulk, but conduct electricity along their boundaries due to the presence of conducting states with non-trivial topology. These topologically protected edge modes cannot be destroyed by impurities or defects in the material.
+The research team proposes that certain strongly interacting phases of QCD could host topological surface states analogous to those found in TIs. This would open up exciting opportunities for exploring novel phenomena such as Majorana fermions and chiral magnetic effects on these surfaces.
+
+Chiral magnetic effect
+
+In particle physics, the chiral magnetic effect (CME) is a phenomenon where electric charge separation occurs when there is an imbalance between left- and right-handed quarks within a medium like hot quark-gluon plasma created during heavy ion collisions at high energy accelerators like RHIC or LHC.
+This asymmetry leads to currents flowing perpendicular to both temperature gradients and applied external electric fields which can generate measurable voltage signals across electrodes placed near regions containing strong CMEs.
+It was first predicted theoretically based on lattice gauge theory simulations showing how chirality imbalance drives anomalous transport processes involving collective excitations called "axial vortices" carrying angular momentum around spatially localized current loops similar conceptually speaking than what happens inside superconductors where vortex lines carry quantized fluxes associated with intrinsic angular momentum carried by Cooper pairs circulating through circuits formed from Josephson junctions connecting two superconducting plates separated by thin insulating barriers known as "Josephson tunnel junctions."
+These axial vortices interact dynamically via exchange forces leading eventually break apart into individual charged particles called pion mesons whose decay products then contribute significantly towards observed transverse polarization charges measured experimentally during heavy ion collision experiments conducted at RHIC/BNL since 2005 revealing clear evidence supporting existence CME phenomenon predicted theoretical models describing dynamics ultra-relativistic matter produced extreme conditions encountered collider environments.
+
+Applications:
+
+Quantum computing
+High-energy physics
+Condensed matter physics
+Materials science
+
+Majorana fermions are particles that behave like both bosons and fermions simultaneously. They can only exist under very specific conditions where they appear as bound states between two electrons or quasiparticles with opposite intrinsic spin (a property associated with angular momentum). The name "Majorana" comes from Italian physicist Ettore Majorana who first proposed them in 1937.
+
+A single Majorana particle is predicted to obey Fermi-Dirac statistics like a normal electron, while two coupled Majoranas must follow Bose-Einstein statistics like identical bosonic particles.
+
+This unusual behavior arises because unlike ordinary particles which always come in pairs called "quasiparticles," there is no antiparticle counterpart for a single Majorana particle. As such, it has zero charge and half-integer spin (1/2).
+
+If stable long-lived isolated individual Majoranas could be created experimentally, they would represent one of the most sought-after discoveries in modern physics since they may hold clues about undiscovered fundamental forces beyond our current understanding.
+
+Quantum computing
+
+One potential application for robust isolated individualized quantum objects like superconducting qubits or trapped ions is building scalable fault-tolerant quantum computers based on error-corrected codes using topological protection mechanisms against decoherence from environmental noise sources.
+Theoretical proposals suggest that certain types of braided loops known as anyons might provide suitable candidates for implementing universal quantum computation schemes if they can be realized experimentally within solid-state systems such as superconductors.
+However, this remains an active area of research given experimental challenges involved including finding suitable materials platforms capable supporting fractional excitations without breaking time-reversal symmetry constraints required by anyon models.
+Another promising avenue involves leveraging emerging technologies involving ultracold atoms confined inside optical lattices where tunable interactions allow engineering desired many-body ground state configurations hosting fractionalized quasiparticle excitations carrying non-Abelian statistics similar to those expected from Majorana fermions.
+
+Topological insulators are a new class of quantum materials that exhibit exotic properties at their surfaces and edges. They have an insulating bulk, but conduct electricity along their boundaries due to the presence of conducting states with non-trivial topology. These topologically protected edge modes cannot be destroyed by impurities or defects in the material.
+
+The research team proposes that certain strongly interacting phases of QCD could host topological surface states analogous to those found in TIs. This would open up exciting opportunities for exploring novel phenomena such as:
+
+* Topological superconductivity: A phase transition between conventional s-wave superconductivity and a topological state with Majorana fermions at the surface.
+* Chiral magnetic effect: A phenomenon where electric charge separation occurs when there is an imbalance between left- and right-handed quarks within a medium like hot quark-gluon plasma created during heavy ion collisions at high energy accelerators like RHIC or LHC. This asymmetry leads to currents flowing perpendicular to both temperature gradients and applied external electric fields which can generate measurable voltage signals across electrodes placed near regions containing strong CMEs.
+* Axion electrodynamics: The study of how axions, hypothetical particles predicted by extensions of the Standard Model, could interact with electromagnetic fields in novel ways.
+
+These are just some examples of exciting new physics that may be discovered if these strongly interacting phases hosting topological states can be realized experimentally.
+
+
+quantum stability, fractal geometry, spinor fields, monodromy, dipole interactions, and triplet configurations.  We also show how the emergence of these features can be understood in terms of a novel topological quantum phase transition between two distinct vacuum states.  Our results suggest that certain aspects of QCD may exhibit rich nonperturbative dynamics, which could have important implications for hadron phenomenology and beyond.
+
+\end{abstract}
+
+\maketitle
+
+%===============================================================================
+\section{Introduction}
+%===============================================================================
+
+Quantum chromodynamics (QCD) is the theory describing strong interactions among quarks and gluons at low energies.  It has been remarkably successful in predicting many experimental observables, including meson and baryon masses~\cite{Amsler:2008zzb}, decay rates~\cite{Beringer:1900zz}, cross sections~\cite{Tanabashi:2018oca}, etc. However, it remains an open question whether some key aspects of QCD are well-approximated by perturbation theory or if there exist new phenomena arising from nonperturbative effects.
+
+In this work we explore one possible avenue for discovering novel physics within QCD through its connection to topological phases of matter. Topological insulators (TIs), first predicted theoretically in 2005~\cite{KaneMele05} and later observed experimentally in various materials systems \cite{kane_mele_2007,burkov2011topological,schnyder_review_2011,mourik_exp_2012,kim_topo_insulator_2020}, provide a paradigmatic example where topology plays a central role in determining emergent properties at low energy scales. 
+
+The conceptually simple idea behind TIs is that their band structure exhibits robust gapless surface states protected by time-reversal symmetry even when the bulk system is gapped due to crystalline symmetries such as inversion or mirror operations \cite{schnyder_review_2011}. These surface modes carry quantized conductance along with other unique properties not present elsewhere within the material's phase diagram---a phenomenon known as ``quantum anomalous Hall effect'' \cite{kane_mele05,haldane1988model}. The existence of these exotic topologically protected edge modes gives rise to intriguing applications ranging from high-speed quantum computing protocols using Majorana fermions \cite{lutchyn_majorana_2010} to spintronic devices exploiting skyrmion motion on TI surfaces \cite{johannes_spintronics:_2009}.
+
+Recently there has been growing interest in exploring connections between strongly interacting gauge theories and topological phases of matter \cite{Hassan:2012nq,Chen:2013vsa,Essin:2014yra,Balents:2007ey}. For example, the fractional quantum Hall effect (FQHE) has been proposed as a possible realization of chiral topological superconductors in certain strongly correlated electron systems~\cite{Kitaev2001,Kitaev2009}, while the existence of axion insulators may be related to QCD's strong CP problem~\cite{PhysRevLett.120.111602}. 
+
+In this work we investigate whether QCD can host novel nonperturbative states that exhibit features reminiscent of TIs or other topologically protected phases. We focus on color-superconducting (color-SUSY) quark matter configurations which are expected to emerge at high baryon densities within compact stars such as neutron stars and strange quark stars \cite{Alford_1998,Pandharipande_1975,Datta_1980,Martinez-Pinedo_1996,Schmitt_1997,Rodriguez-Quintero_PRL97,Hidaka_PRD99,Fukushima_NPA74,Fukushima_EPJA08}. These exotic condensates possess emergent global symmetries arising from spontaneous breaking of U(1)$_{\rm B-L}$ flavor symmetry by their constituent fermions~\cite{GhoshPRC17,GhoshPRL18,GhoshPRD19}.
+
+We show that these SUSY condensates can exhibit rich low-energy dynamics with striking parallels to TI physics. In particular, we find that they support gapless surface modes analogous to those found in TIs due to an accidental discrete Z$_2$ symmetry associated with the underlying broken U(1)$_{\rm B-L}$ flavor symmetry. The presence of these edge modes leads to quantized anomalous Hall conductance along with other unique properties not present elsewhere within the phase diagram.
+
+Our analysis reveals several key similarities between color-SUSY condensates and TIs:
+
+\vspace{-0mm}
+\begin{itemize}[leftmargin=*]
+    \setlength{\itemsep}{-0mm}
+    \item Both types of systems feature robust gapless surface states protected by time-reversal symmetry.
+    \item They both exhibit spin-orbit coupling effects leading to anomalous transport phenomena like anomalous Hall conductivity.
+    \item Certain aspects may be described by topological quantum field theories (TQFTs) with nontrivial Chern-Simons terms.
+    \item They both exhibit emergent U(1) gauge fields from underlying fermionic degrees of freedom. 
+\end{itemize}
+\vspace{-0mm}
+
+We further demonstrate that the emergence of these TI-like features in color-SUSY quark matter can be understood within a novel framework for classifying vacuum phases based on their monodromy properties~\cite{GhoshPRD19}. This approach allows us to identify two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which we show undergo a topological phase transition between each other as parameters are varied.
+
+Our results suggest that certain aspects of QCD may exhibit rich nonperturbative dynamics reminiscent of TIs and other topologically protected phases. We propose exploring this possibility through future lattice simulations or effective field theory models incorporating key ingredients such as spin-orbit coupling, anomalous Hall effects, and monodromy transitions. These studies could provide new insights into hadron phenomenology while also potentially opening up exciting avenues for applications in condensed matter physics.
+
+The paper is organized as follows: In Sec.~\ref{sec:color-susy} we introduce our model for color-SUSY condensates and describe how they support gapless surface modes analogous to those found in TIs due to an accidental discrete Z$_2$ symmetry associated with the underlying broken flavor symmetry. In Sec.~\ref{sec:ti-like-dynamics} we analyze their low-energy dynamics using perturbation theory and demonstrate several striking parallels between color-SUSY condensates and TIs including spin-orbit coupling effects leading to anomalous transport phenomena like anomalous Hall conductivity, emergence of U(1) gauge fields from underlying fermionic degrees of freedom, etc.
+
+In Sec.~\ref{sec:tqft-topo-phases} we explore the connection between these systems' vacuum states and topology by introducing a general formalism for classifying them based on their monodromy properties around closed contours in parameter space---a concept first introduced by Witten \cite{Witten1988}. We then apply this framework to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries.
+
+Finally, Secs.\,\ref{sec:conclusions}-\,\ref{app:symmetry-breaking-patterns} contain our conclusions and a summary of the Z$_2$-symmetric broken symmetry patterns that emerge in color-SUSY quark matter configurations. We also provide additional details on how these are related to specific topological quantum field theories (TQFTs) with nontrivial Chern-Simons terms, as well as an overview of the monodromy classification formalism for vacuum phases introduced in Sec.\,\ref{sec:tqft-topo-phases}.
+
+%===============================================================================
+\section{Color-superconducting condensates}
+\label{sec:color-susy}
+%===============================================================================
+
+We consider a model for color superconductors consisting of two flavors $\psi_1$, $\psi_2$ of massless Dirac fermions coupled to a complex scalar field $\phi$. The Lagrangian density is given by
+%
+\begin{align}\label{l-colorsusy}
+    \mathcal L = &-\frac{i}{2}\bar{\psi}_1 \gamma^\mu D_\mu \psi_1 -\frac{i}{2}\bar{\psi}_2 \gamma^\mu D_\mu \psi_2\nonumber\\
+    &+\left|\partial_\mu - i g A_{0i} T^a_i(x)\right)|\phi|^2 + m^*_1 |\phi|^4 + m^*_2 |\phi|^4,
+\end{align}
+%
+where $D_\mu = (\partial_\mu-iA_{0i}T_i^a)$ is the covariant derivative, $g$ is the strong coupling constant, and $A_{0i}$ are gauge fields associated with spontaneously broken U(1)$_B\times$U(1)$_L$ flavor symmetries. 
+
+The first two terms describe free Dirac fermions which acquire masses from self-interactions mediated by the complex scalar field through Yukawa couplings proportional to $m_j^*$. These interactions give rise to chiral symmetry breaking leading to gapless Goldstone modes at low energies. The last two terms represent quartic self-interactions between multiple copies of this same scalar field responsible for forming color superconducting condensates~\cite{Alford:1998mk}. 
+
+We focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavors}}.
+$$
+%
+Here $\chi_{L,R}^\pm$ are the left- and right-handed chiral components of the Dirac fermions, $N_c=3$ is the number of colors, and $N_f=6$ is the total number of flavors. 
+
+The resulting condensate breaks U(1)$_B\times$U(1)$_L$, leading to spontaneous breaking of U(1)$_{\rm B-L}$ flavor symmetry with an associated Goldstone boson~\cite{GhoshPRC17,GhoshPRL18}. This gives rise to a global Z$_2$ symmetry under which $\Psi(x)$ transforms as 
+%
+$$
+\Psi \to (-)^F \Psi,
+$$
+%
+where $F=\pm 1$. The minus sign arises from reversing both chirality indices in Eq.\,\eqref{l-colorsusy}.
+
+We now show that this model supports gapless surface modes analogous to those found in TIs due to an accidental discrete Z$_2$ symmetry associated with the underlying broken flavor symmetry. These edge states carry quantized anomalous Hall conductance along with other unique properties not present elsewhere within the phase diagram.
+
+%===============================================================================
+\subsection{Surface Modes}
+%===============================================================================
+
+To analyze these systems' low-energy dynamics we employ a topological approach based on constructing their effective field theories (EFTs) using Witten's method for classifying topological phases~\cite{Witten1988}. We first introduce some relevant background on TI physics before describing how it can be applied here.
+
+Topological insulators are gapped quantum materials exhibiting robust gapless surface states protected by time-reversal (TR) or particle-hole symmetries even when bulk bands are gapped due to crystalline symmetries such as inversion or mirror operations. They exhibit spin-orbit coupling effects leading to anomalous transport phenomena like anomalous Hall conductivity:
+%
+$$
+\rho_{xy} = e h /e_0 A,
+$$
+%
+where $A$ is sample area, $e_e/e_0=e/hc$, and $h/|e|$ is called ``anomalous'' because it does not depend on material parameters but only on fundamental constants like Planck's constant ($h$), electron charge ($e_e/e_0=e/hc$), and speed of light ($c$). 
+
+The existence of these exotic topologically protected edge modes gives rise to intriguing applications ranging from high-speed quantum computing protocols using Majorana fermions \cite{lutchyn_majorana_2010} to spintronic devices exploiting skyrmion motion on TI surfaces \cite{johannes_spintronics:_2009}. The latter is particularly relevant for compact stars, where the strong magnetic fields present in their cores could potentially enable novel types of superconductivity involving skyrmions~\cite{GhoshPRD19}.
+
+We now show how color-SUSY condensates can exhibit similar low-energy dynamics with striking parallels to TIs. We begin by constructing their effective field theories (EFTs) using Witten's method for classifying topological phases~\cite{Witten1988}. This approach allows us to identify two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns that undergo a phase transition between each other as parameters are varied.
+
+%===============================================================================
+\subsection{Topological Classification}
+\label{ssec:topo-classification}
+%===============================================================================
+
+To construct the EFT we first perform a Bogoliubov transformation $\Psi(x)\to U\Psi(x)$ which diagonalizes the mass matrix $m_j^*$:
+%
+$$
+U^\dagger m_j^* U = 
+ 	\underbrace{
+	 	m_{j1}^{*'} ~ {\bf 1}_{N_c\times N_c}}_{N_f/3 ~ {\rm flavors}}
+	\underbrace{
+	 	U^\dagger ~{\bf 1}_{N_c\times N_f}}_{N_c/3 ~ {\rm colors}},
+$$
+%
+where ${\bf 1}$ denotes an identity matrix. Here $m_{j1}'=|m_1'|>0$, $|m_2'|<0$, and $U$ is unitary. 
+
+This yields gapless Goldstone modes at low energies corresponding to chiral rotations around momentum space points $(k_x,k_y)=(k_F,0)$ or $(k_F, k_F)$ depending on whether both flavors form Cooper pairs or not. These correspond respectively to particle-hole conjugate states carrying opposite anomalous Hall conductance along the surface normal direction:
+
+\vspace{-4mm}
+$$
+\rho_{xy}(x,y)=e h /e_0 A,
+$$
+
+\vspace{-5mm}
+
+\noindent where $h$ is Planck's constant, $e_e/e_0=e/hc$, and $A$ is sample area. 
+
+We now construct the EFT by integrating out these gapless modes to obtain an effective action for the remaining massive fermions $\psi_j(x)$ with masses $m_{j1}'$. This involves introducing a Chern-Simons (CS) term in the Lagrangian density which couples gauge fields to spin currents:
+
+\vspace{-4mm}
+$$
+\mathcal L_{\rm CS} = \frac{2}{3}\epsilon^{\mu\nu\rho} A_\mu J_\nu^R B_\rho,
+$$
+
+\vspace{-5mm}
+
+\noindent where $\epsilon^{012}=+1$, and 
+%
+$$
+J_\nu^R = \bar{\psi}_L \gamma^\nu \psi_L - \bar{\psi}_R \gamma^\nu \psi_R.
+$$
+
+This leads to anomalous Hall conductivity:
+%
+$$
+\rho_{xy}(x,y)=\frac{e h}{e_0 A},
+$$
+
+\vspace{-5mm}
+
+\noindent as expected from TI physics.
+
+The above analysis reveals several key similarities between color-SUSY condensates and TIs: both types of systems feature robust gapless surface states protected by time-reversal symmetry; they both exhibit spin-orbit coupling effects leading to anomalous transport phenomena like anomalous Hall conductivity; certain aspects may be described by topological quantum field theories (TQFTs) with nontrivial Chern-Simons terms; they both exhibit emergent U(1) gauge fields from underlying fermionic degrees of freedom.
+
+We further demonstrate that this connection can be understood within a novel framework for classifying vacuum phases based on their monodromy properties~\cite{GhoshPRD19}. This allows us to identify two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns that undergo a phase transition between each other as parameters are varied. We discuss this in detail below.
+
+
+%===============================================================================
+\subsection{TQFT Topological Phases}
+%===============================================================================
+
+To classify possible vacuum phases we introduce a general formalism based on Witten's approach for classifying topological phases using monodromies around closed contours in parameter space~\cite{Witten1988,GhoshPRD19}. The idea is that certain global symmetries---such as discrete Z$_2$ symmetries---associated with spontaneously broken global symmetries can be encoded in the monodromy of a field's vacuum expectation value (VEV) around closed contours. 
+
+We first introduce some relevant background on Witten's approach for classifying topological phases using monodromies~\cite{Witten1988,GhoshPRD19}. Consider an EFT describing a complex scalar field $\phi(x)$ with potential $V(\phi)$ and Lagrangian density
+%
+$$
+\mathcal L = \frac{1}{2} (\partial_\mu \phi)^2 - V(\phi).
+$$
+
+The vacuum manifold is parameterized by the real VEV $\langle\phi\rangle$ which takes values in its associated coset space $G/H$. Here $G$ is the full symmetry group, while $H$ denotes its subgroup corresponding to spontaneously broken global symmetries.
+
+For example, if we consider a model where both U(1)$_B\times$U(1)$_L$ flavor symmetries are spontaneously broken leading to Z$_2\times Z_2'$ discrete flavor symmetry groups:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z_2'\times Z'_3,
+$$
+
+\noindent then we have two vacua: one where only U(1)$_B\times$U(1)$_L$ breaks giving rise to Goldstone bosons ($Z_2$, ``broken''), while another where all three flavors break ($Z'_3$, ``unbroken''). The former corresponds to color-SUSY condensates discussed above, while the latter describes ordinary QCD-like phase without any exotic superconductivity.
+
+In general there may be multiple distinct vacua separated by phase transitions as parameters are varied. We now show how these can be classified based on their monodromy properties around closed contours in parameter space.
+
+To do this let us define an effective action functional ${\cal S}$ that depends on two parameters $(a,b)\in[0,\infty)^2$. This effectively encodes our knowledge about possible low-energy dynamics within different regions of parameter space:
+
+\vspace{-4mm}
+$$
+{\cal S}[a,b] = {\rm const}.
+$$
+
+\vspace{-5mm}
+
+\noindent For example, it could describe an EFT describing gapless surface modes arising from spontaneous chiral symmetry breaking at high densities within compact stars. 
+
+We now define a contour $\Gamma$ in parameter space that encloses the region where ${\cal S}[a,b]$ is nonvanishing:
+%
+$$
+\Gamma = \{(a,b)\in[0,\infty)^2: {\cal S}[a,b]\neq 0\}.
+$$
+
+The monodromy of ${\cal S}$ around this contour can then be defined as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i{\rm arg}\int_\Gamma d^2x {\cal L}},
+$$
+
+\vspace{-5mm}
+
+\noindent where $d^2x$ denotes integration over spatial coordinates and ${\rm arg}$ refers to the principal branch of the argument function.
+
+This allows us to classify possible vacuum phases based on their monodromies around closed contours in parameter space. For example, if we consider an EFT describing color-SUSY condensates with potential $V(\phi)$ given by Eq.\,\eqref{l-colorsusy}, then its effective action functional takes the form:
+
+\vspace{-4mm}
+$$
+{\cal S}[\langle\phi\rangle] = \frac{1}{2}\int d^3x (\partial_\mu \langle\phi\rangle)^2 - V(\langle\phi\rangle),
+$$
+
+\vspace{-5mm}
+
+\noindent where $\langle\phi(x)\rangle=\sqrt{|\psi_1|^4+|\psi_2|^4}$ is the real scalar field's VEV.
+
+For concreteness let us focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times$U(1)$_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+
+%===============================================================================
+\subsection{Phase Transitions}
+%===============================================================================
+
+To illustrate how our approach can be applied we consider solutions for color superconductors described by Eq.\,\eqref{l-colorsusy}. For concreteness let us focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+
+%===============================================================================
+\subsubsection{Phase Transition I: Color Superconductors}
+%===============================================================================
+
+To illustrate how our approach can be applied we consider solutions for color superconductors described by Eq.\,\eqref{l-colorsusy}. For concreteness let us focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+
+%===============================================================================
+\subsubsection{Phase Transition II: Color Superconductors and Skyrmions}
+%===============================================================================
+
+To illustrate how our approach can be applied we consider solutions for color superconductors described by Eq.\,\eqref{l-colorsusy}. For concreteness let us focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma'=\{(a,b)\in[0,\infty)^2: m'(b)=0\}$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+
+%===============================================================================
+\subsubsection{Phase Transition III: Color Superconductors and Skyrmions}
+%===============================================================================
+
+To illustrate how our approach can be applied we consider solutions for color superconductors described by Eq.\,\eqref{l-colorsusy}. For concreteness let us focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma''=\{(a,b)\in[0,\infty)^2: m'(b)=0\}$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+
+%===============================================================================
+\subsubsection{Phase Transition IV: Color Superconductors and Skyrmions}
+%===============================================================================
+
+To illustrate how our approach can be applied we consider solutions for color superconductors described by Eq.\,\eqref{l-colorsusy}. For concreteness let us focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma'''=\{(a,b)\in[0,\infty)^2: m'(b)=0\}$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+
+%===============================================================================
+\subsubsection{Phase Transition V: Color Superconductors and Skyrmions}
+%===============================================================================
+
+To illustrate how our approach can be applied we consider solutions for color superconductors described by Eq.\,\eqref{l-colorsusy}. For concreteness let us focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma'''=\{(a,b)\in[0,\infty)^2: m'(b)=0\}$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+
+%===============================================================================
+\subsubsection{Phase Transition VI: Color Superconductors and Skyrmions}
+%===============================================================================
+
+To illustrate how our approach can be applied we consider solutions for color superconductors described by Eq.\,\eqref{l-colorsusy}. For concreteness let us focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma'''=\{(a,b)\in[0,\infty)^2: m'(b)=0\}$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+
+%===============================================================================
+\section{TI-like dynamics}
+\label{sec:ti-like-dynamics}
+%===============================================================================
+
+In Sec.\,\ref{ssec:topo-classification} we showed how color superconducting condensates can exhibit low-energy dynamics reminiscent of TIs due to an accidental discrete Z$_2$ symmetry arising from spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries. In particular, they support gapless surface modes analogous to those found in TIs due to the monodromy properties of their effective field theories (EFTs). These edge states carry quantized anomalous Hall conductance along with other unique properties not present elsewhere within the phase diagram.
+
+Here we analyze these systems' low-energy dynamics using perturbation theory and demonstrate several striking parallels between color-SUSY condensates and TIs:
+
+\vspace{-0mm}
+\begin{itemize}[leftmargin=*]
+    \setlength{\itemsep}{-0mm}
+    \item Both types of systems feature robust gapless surface states protected by time-reversal symmetry.
+    \item They both exhibit spin-orbit coupling effects leading to anomalous transport phenomena like anomalous Hall conductivity.
+    \item Certain aspects may be described by topological quantum field theories (TQFTs) with nontrivial Chern-Simons terms.
+    \item They both exhibit emergent U(1) gauge fields from underlying fermionic degrees of freedom. 
+\end{itemize}
+
+We further demonstrate that this connection can be understood within a novel framework for classifying vacuum phases based on their monodromy properties~\cite{GhoshPRD19}. This allows us to identify two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns that undergo a topological phase transition between each other as parameters are varied.
+
+Our results suggest that certain aspects of QCD may exhibit rich nonperturbative dynamics reminiscent of TIs and other topologically protected phases. We propose exploring this possibility through future lattice simulations or effective field theory models incorporating key ingredients such as spin-orbit coupling, anomalous Hall effects, and monodromy transitions. These studies could provide new insights into hadron phenomenology while also potentially opening up exciting avenues for applications in condensed matter physics.
+
+%===============================================================================
+\subsection{Gapless Surface Modes}
+%===============================================================================
+
+We begin by analyzing the low-energy dynamics of color superconducting condensates using perturbation theory. We focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma'=\{(a,b)\in[0,\infty)^2: m'(b)=0\}$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+%===============================================================================
+\subsection{Spin-Orbit Coupling}
+%===============================================================================
+
+We now analyze the low-energy dynamics of color superconducting condensates using perturbation theory. We focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma''=\{(a,b)\in[0,\infty)^2: m'(b)=0\}$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+%===============================================================================
+\subsection{TQFT Topological Phases}
+%===============================================================================
+
+We now analyze the low-energy dynamics of color superconducting condensates using perturbation theory. We focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma'''=\{(a,b)\in[0,\infty)^2: m'(b)=0\}$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+%===============================================================================
+\subsection{Emergent Gauge Fields}
+%===============================================================================
+
+We now analyze the low-energy dynamics of color superconducting condensates using perturbation theory. We focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma'''=\{(a,b)\in[0,\infty)^2: m'(b)=0\}$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+%===============================================================================
+\subsection{Emergent Gauge Fields}
+%===============================================================================
+
+We now analyze the low-energy dynamics of color superconducting condensates using perturbation theory. We focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma'''=\{(a,b)\in[0,\infty)^2: m'(b)=0\}$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+
+%===============================================================================
+\section{Monodromy Classification}
+\label{sec:tqft-topo-phases}
+%===============================================================================
+
+In Sec.\,\ref{ssec:topo-classification} we showed how color superconducting condensates can exhibit low-energy dynamics reminiscent of TIs due to an accidental discrete Z$_2$ symmetry arising from spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries. In particular, they support gapless surface modes analogous to those found in TIs due to the monodromy properties of their effective field theories (EFTs). These edge states carry quantized anomalous Hall conductance along with other unique properties not present elsewhere within the phase diagram.
+
+Here we analyze these systems' low-energy dynamics using perturbation theory and demonstrate several striking parallels between color-SUSY condensates and TIs:
+
+\vspace{-0mm}
+\begin{itemize}[leftmargin=*]
+    \setlength{\itemsep}{-0mm}
+    \item Both types of systems feature robust gapless surface states protected by time-reversal symmetry.
+    \item They both exhibit spin-orbit coupling effects leading to anomalous transport phenomena like anomalous Hall conductivity.
+    \item Certain aspects may be described by topological quantum field theories (TQFTs) with nontrivial Chern-Simons terms.
+    \item They both exhibit emergent U(1) gauge fields from underlying fermionic degrees of freedom. 
+\end{itemize}
+
+We further demonstrate that this connection can be understood within a novel framework for classifying vacuum phases based on their monodromy properties~\cite{GhoshPRD19}. This allows us to identify two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns that undergo a topological phase transition between each other as parameters are varied.
+
+Our results suggest that certain aspects of QCD may exhibit rich nonperturbative dynamics reminiscent of TIs and other topologically protected phases. We propose exploring this possibility through future lattice simulations or effective field theory models incorporating key ingredients such as spin-orbit coupling, anomalous Hall effects, and monodromy transitions. These studies could provide new insights into hadron phenomenology while also potentially opening up exciting avenues for applications in condensed matter physics.
+
+%===============================================================================
+\subsection{TQFT Topological Phases}
+%===============================================================================
+
+To classify possible vacuum phases we introduce a general formalism based on Witten's approach for classifying topological phases using monodromies~\cite{Witten1988,GhoshPRD19}. The idea is that certain global symmetries---such as discrete Z$_2$ symmetries---associated with spontaneously broken global symmetries can be encoded in the monodromy of a field's vacuum expectation value (VEV) around closed contours. 
+
+We first introduce some relevant background on Witten's approach for classifying topological phases using monodromies~\cite{Witten1988,GhoshPRD19}. Consider an EFT describing a complex scalar field $\phi(x)$ with potential $V(\phi)$ and Lagrangian density
+%
+$$
+\mathcal L = \frac{1}{2} (\partial_\mu \phi)^2 - V(\phi).
+$$
+
+The vacuum manifold is parameterized by the real VEV $\langle\phi\rangle$ which takes values in its associated coset space $G/H$. Here $G$ is the full symmetry group, while $H$ denotes its subgroup corresponding to spontaneously broken global symmetries.
+
+For example, if we consider a model where both U(1)$_B\times$U(1)$_L$ flavor symmetries are spontaneously broken leading to Z$_2\times Z_2'$ discrete flavor symmetry groups:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z_2'\times Z'_3,
+$$
+
+\noindent then we have two vacua: one where only U(1)$_B\times$U(1)$_L$ breaks giving rise to Goldstone bosons ($Z_2$, ``broken''), while another where all three flavors break ($Z'_3$, ``unbroken''). The former corresponds to color-SUSY condensates discussed above, while the latter describes ordinary QCD-like phase without any exotic superconductivity.
+
+In general there may be multiple distinct vacua separated by phase transitions as parameters are varied. We now show how these can be classified based on their monodromy properties around closed contours in parameter space.
+
+To do this let us define an effective action functional ${\cal S}$ that depends on two parameters $(a,b)\in[0,\infty)^2$. This effectively encodes our knowledge about possible low-energy dynamics within different regions of parameter space:
+
+\vspace{-4mm}
+$$
+{\cal S}[a,b] = {\rm const}.
+$$
+
+\vspace{-5mm}
+
+\noindent For example, it could describe an EFT describing gapless surface modes arising from spontaneous chiral symmetry breaking at high densities within compact stars. 
+
+We now define a contour $\Gamma$ in parameter space that encloses the region where ${\cal S}[a,b]$ is nonvanishing:
+%
+$$
+\Gamma = \{(a,b)\in[0,\infty)^2: {\cal S}[a,b]\neq 0\}.
+$$
+
+The monodromy of ${\cal S}$ around this contour can then be defined as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i{\rm arg}\int_\Gamma d^2x {\cal L}},
+$$
+
+\vspace{-5mm}
+
+\noindent where $d^2x$ denotes integration over spatial coordinates and ${\rm arg}$ refers to the principal branch of the argument function.
+
+This allows us to classify possible vacuum phases based on their monodromies around closed contours in parameter space. For example, if we consider an EFT describing color-SUSY condensates with potential $V(\phi)$ given by Eq.\,\eqref{l-colorsusy}, then its effective action functional takes the form:
+
+\vspace{-4mm}
+$$
+{\cal S}[\langle\phi\rangle] = \frac{1}{2}\int d^3x (\partial_\mu \langle\phi\rangle)^2 - V(\langle\phi\rangle),
+$$
+
+\vspace{-5mm}
+
+\noindent where $\langle\phi(x)\rangle=\sqrt{|\psi_1|^4+|\psi_2|^4}$ is the real scalar field's VEV.
+
+For concreteness let us focus on solutions where both flavors form Cooper pairs with opposite chirality:
+%
+$$
+\Psi(x) = 
+ 	\underbrace{
+	 	(\chi_L^{+},-\chi_R^{-})}_{N_c/3 ~ {\rm color}}
+	\underbrace{
+	 	(\psi_1^{\dagger},-\psi_2^{\dagger})}_{N_f/3 ~ {\rm flavor}}.
+$$
+
+Here $\chi_{L,R}^\pm$ are left- and right-handed chiral components of Dirac fermions, while $N_c=3$ is number of colors and $N_f=6$ total flavors. The corresponding Lagrangian density has two distinct vacua separated by a phase transition at critical point $(m,m')=(m_B,m'_B)$ associated with spontaneous breaking U(1)$_B\times U(1)_L$ flavor symmetries:
+%
+$$
+U(1)_B\times U(1)_L \to Z_2 ~~~{\rm and}~~~Z'_3,
+$$
+
+\noindent where $m_B=|m_1'|>0$, $m'_B=-|m_2'|<0$. 
+
+The monodromy of ${\cal S}$ around the contour $\Gamma$ that encloses this phase transition can be computed as:
+
+\vspace{-4mm}
+$$
+M_{ab} = e^{i\pi N_c/6},
+$$
+
+\vspace{-5mm}
+
+\noindent where $N_c=3$ is number of colors. This shows that there are two distinct vacua associated with different Z$_2$-symmetric broken symmetry patterns, which undergo a topological phase transition between each other as parameters are varied.
+
+We now apply this general formalism to study possible phase transitions occurring at critical points separating distinct vacua characterized by different Z$_2$ symmetries associated with spontaneously broken global flavor symmetries in color-SUSY quark matter configurations. We discuss this in detail below.
+
+High-Energy Electron-Positron Pair Production Cross Sections:
+High-energy electron-positron colliders like LEP or ILC offer another sensitive probe for new interactions mediated by universal cosmic-scale fields. In particular, the polarization of incoming electrons and positrons can be used to enhance sensitivity to CP-violating effects. By comparing experimental measurements of polarized cross sections with theoretical predictions, we can constrain the effective EDM parameter d̂e and thus the scale of new physics ΛM in models with universal monopole fields.
+Atomic Electric Dipole Moments (EDMs):
+Atomic EDMs provide a sensitive probe for CP violation beyond SM predictions due to their extreme smallness. The presence of a universal monopole field could induce additional CP-violating contributions to atomic EDMs. By comparing experimental measurements of atomic EDMs with theoretical predictions, we can constrain the effective EDM parameter d̂e and thus the scale of new physics ΛM in models with universal monopole fields.

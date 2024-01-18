@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Generator</title>
+</head>
+<body>
+    <h1>OpenAI Code Generator</h1>
+    <form method="post">
+        <textarea name="user_input" rows="4" cols="50" placeholder="Enter your instructions here..."></textarea><br>
+        <input type="submit" value="Generate Code">
+    </form>
+    {% if generated_code %}
+        <h2>Generated Code:</h2>
+        <pre>{{ generated_code }}</pre>
+    {% endif %}
+</body>
+</html>

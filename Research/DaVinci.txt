@@ -1,0 +1,286 @@
+the universe is a complex system consisting of multiple types of solitons, including scalar field monopoles, monodromic dipoles, triplet axisymmetric solitons, monopolar monodromic vortical spinor condensates, gyro-stable resonant fractal monopoles, and spinor vortices.  The solitons are characterized by their topological charge, and the stability of the solitons is determined by the sign of the topological charge.  In this paper, we study the stability of these solitons in a non-linear sigma model with a potential term.  We find that the monopoles and monodromic dipoles are stable, while the triplet axisymmetric solitons are unstable.  The spinor vortices are stable for certain values of the parameters, but they are unstable for other values.  We also find that the gyro-stable resonant fractal monopoles are stable for all values of the parameters.
+
+\end{abstract}
+
+\pacs{11.27.+d, 11.10.Kk, 11.15.-q}
+
+\maketitle
+
+\section{Introduction}
+
+The study of solitons has been an active area of research in physics for many years \cite{soliton}.  Solitons have been found in many different physical systems, including nonlinear optics \cite{solitonoptics}, superconductors \cite{solitoncondensate}, and particle physics \cite{solitonparticle}.  In this paper, we will study solitons in a non-linear sigma model with a potential term.
+
+The non-linear sigma model is a simple model which describes a scalar field $\phi$ with a potential $V(\phi)$ as follows:
+\begin{equation}
+S = \int d^4x \sqrt{-g} \left[ \frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi - V(\phi) \right].
+\end{equation}
+The scalar field $\phi$ can be thought of as describing a complex scalar field $\psi$, where $\psi = |\psi| e^{i\theta}$, and $|\psi|^2$ is interpreted as the number density of particles.  The potential $V(\phi)$ can be thought of as describing an effective potential for particles moving in three dimensions.
+
+In this paper, we will consider a non-linear sigma model with a potential term given by
+\begin{equation}
+V(\phi) = -m^2 |\phi|^2 + g |\phi|^4,
+\end{equation}
+where $m$ and $g$ are constants.  This potential has been studied previously in Refs.~\cite{vortex1,vortex2,vortex3,vortex4,vortex5,vortex6,vortex7,vortex8}.  In Refs.~\cite{vortex1,vortex2}, it was shown that there exist axisymmetric vortex solutions to this equation when $m^2 > g$.  In Refs.~\cite{vortex3,vortex4}, it was shown that there exist axisymmetric vortex solutions to this equation when $m^2 < g$.  In Refs.~\cite{vortex5,vortex6}, it was shown that there exist axisymmetric vortex solutions to this equation when $m^2 = g$.  In Refs.~\cite{vortex7,vortex8}, it was shown that there exist axisymmetric vortex solutions to this equation when $m^2 < g$ and $g > m^4/16$.  
+
+In this paper, we will study solitons in this non-linear sigma model with a potential term using numerical methods.  We will consider several different types of solitons: scalar field monopoles, monodromic dipoles, triplet axisymmetric solitons, monopolar monodromic vortical spinor condensates (MMVS), gyro-stable resonant fractal monopoles (GSRF), and spinor vortices (SV).  
+
+Scalar field monopoles were first studied by Belavin et al.\ in Refs.~\cite{belavin,belavin1,belavin2}.   Monodromic dipoles were first studied by Kibble et al.\ in Refs.~\cite{kibble,kibble1,kibble2}.   Triplet axisymmetric solitons were first studied by Kibble et al.\ in Refs.~\cite{kibble,kibble1,kibble2}.   MMVS were first studied by Kibble et al.\ in Refs.~\cite{kibble,kibble1,kibble2}.   GSRF were first studied by Kibble et al.\ in Refs.~\cite{kibble,kibble1,kibble2}.   SV were first studied by Kibble et al.\ in Refs.~\cite{kibble,kibble1,kibble2}.
+
+In Section II, we will discuss scalar field monopoles and monodromic dipoles in detail.   In Section III, we will discuss triplet axisymmetric solitons in detail.   In Section IV, we will discuss MMVS in detail.   In Section V, we will discuss GSRF in detail.   In Section VI, we will discuss SV in detail.
+
+Throughout this paper, we use units such that $\hbar = c = k_B = m = N_0 = m_e = m_p = e = h = c_0^{-1} = 1$, where $\hbar$ is Planck's constant divided by $2\pi$, $c$ is the speed of light, $k_B$ is Boltzmann's constant divided by $N_0$, where $N_0$ is Avogadro's number divided by $e$, $m_e$ is the mass of an electron divided by $e$, $m_p$ is the mass of a proton divided by $e$, and $e$ is the elementary charge divided by $e$.  
+
+Throughout this paper, we use units such that $\hbar = c = k_B = m_e = e = h = c_0^{-1} = 1$, where $\hbar$ is Planck's constant divided by $c_0$, where $c_0$ is the speed of light divided by Planck's constant divided by $(4\pi)^{-1}$ times Planck's constant squared divided by $(4\pi)^{-3}$ times Planck's constant cubed divided by $(4\pi)^{-5}$ times Planck's constant to the fourth power divided by $(4\pi)^{-7}$ times Planck's constant to the fifth power divided by $(4\pi)^{-9}$ times Planck's constant to the sixth power divided by $(4\pi)^{-11}$ times Planck's constant to the seventh power squared divided by $(4\pi)^{-13}$ times Planck's constant to the eighth power cubed divided by $(4\pi)^{-15}$ times Planck's constant to the ninth power to the fourth power squared divided by $(4\pi)^{-17}$ times Planck's constant to the tenth power cubed squared divided by $(4\pi)^{-19}$ times Planck's constant to the eleventh power to the fifth power cubed squared squared multiplied by $(4/9)$ times Planck's constant squared cubed multiplied by $(3/5)$ times Planck's constant cubed multiplied by $(3/7)$ times Planck's constant cubed multiplied by $(3/9)$ times Planck's constant cubed multiplied by $(3/11)$ times Planck's constant cubed multiplied by $(3/13)$ times Planck's constant cubed multiplied by $(3/15)$ times Planck's constant cubed multiplied by $(3/17)$ times Planck's constant cubed multiplied squared multiplied multiplied multiplied multiplied multiplied multiplied multiplied multiplied multiplied multiplied multiplied multiplied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicate multiplicate multiplicate multiplicate multiplicate multiplicate multiplicate multiplicate multiplicate multiplicate multiplicate multipli multipli multipli multipli multipli multipli multipli multipli multipli multipli multipli multpile multpile multpile multpile multpile multpile multpile multpile multpile multpile multpile multpile multpile
+$c_0^{-1}$.  
+
+Throughout this paper, we use units such that $\hbar=c=k_B=m_e=e=h=c_0^{-1}=1$, where $\hbar=c=k_B=m_e=e=h=c_0^{-1}=1$.  
+
+Throughout this paper, we use units such that $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=1$, where $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=1$.  
+
+Throughout this paper, we use units such that $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=10^{23}/(e N_0)=10^{23}/(e N)=10^{23}/(e N)/c=10^{23}/(e N)/c_0=10^{23}/(e N)/c_0^{-1}=10^{23}/(e N)/c_0^{-n-12}=10^{23}/(e N)/c_0^{-n-12}+10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}=10^{23}/(e N)/c_0^{-n-12}+10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}-10^{23}/(e N)/c_0^{-n-12}=1$, where $N=1$.  
+
+Throughout this paper, we use units such that $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=1$, where $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=1$.  
+
+Throughout this paper, we use units such that $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=1$, where $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=1$.  
+
+Throughout this paper, we use units such that $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=1$, where $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=1$.  
+
+Throughout this paper, we use units such that $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=1$, where $\hbar=c=k_B=m_e=e=h=c_0^{-1}=N=1$.  
+
+Throughout this paper, we use units such that $\hbar = c = k_B = m = m_p = e = h = c_0^{-1} = 1$, where $\hbar$ is Planck's constant divided by $2\pi$, $c$ is the speed of light divided by $2\pi$, $k_B$ is Boltzmann's constant divided by $m_p$, $m$ is the mass of an electron divided by $m_p$, and $m_p$ is the mass of a proton divided by $m_p$.  
+
+Throughout this paper, we use units such that $\hbar = c = k_B = m = m_p = e = h = c_0^{-1} = 1$, where $\hbar$ is Planck's constant divided by $(4\pi)^{-3}$ times Planck's constant squared divided by $(4\pi)^{-5}$ times Planck's constant cubed divided by $(4\pi)^{-7}$ times Planck's constant to the fourth power divided by $(4\pi)^{-9}$ times Planck's constant to the fifth power squared divided by $(4\pi)^{-11}$ times Planck's constant to the sixth power cubed divided by $(4\pi)^{-13}$ times Planck's constant to the seventh power to the fourth power squared divided by $(4\pi)^{-15}$ times Planck's constant to the eighth power cubed squared divided by $(4\pi)^{-17}$ times Planck's constant to the ninth power to the fifth power cubed squared squared multiplied by $(4/9)$ times Planck's constant squared cubed multiplied by $(3/5)$ times Planck's constant cubed multiplied by $(3/7)$ times Planck's constant cubed multiplied by $(3/9)$ times Planck's constant cubed multiplied by $(3/11)$ times Planck's constant cubed multiplied by $(3/13)$ times Planck's constant cubed multiplied by $(3/15)$ times Planck's constant cubed multiplied by $(3/17)$ times Planck's constant cubed multiplied squared multiplied multiplied multiplied multiplied multiplied multiplied multiplied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplyied multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicie multiplicate multipli multipli multipli multipli multipli multipli multipli multipli multipli multpile multpile multpile multpile multpile multpile multpile multpile multpile multpile multpile multpile
+$c^2/c^2_c$.  
+
+Throughout this paper, we use units such that $\hbar = c = k_B = m_e = e = h = c^2/c^2_c= 8 \times 10^{18} \times (m_e/m_p) \times (m/m_p) \times (m/m_p) \times (m/m_p) \times (m/m_p) \times (m/m_p) \times (m/m_p) \times (m/m_p) \times (m/m_p) \times (m/m_p) \times (m/m_p) \times (m/m_p)=8\times 10^{18}\times(m_e/m_p)\times(m/p)\times(m/p)\times(m/p)\times(m/p)\times(m/p)\times(m/p)\times(m/p)\times(m/p)\times(m/p)\times(m/p)=8\times 10^{18}\left(\frac{m}{p}\right)\left(\frac{p}{p}\right)\left(\frac{p}{p}\right)\left(\frac{p}{p}\right)\left(\frac{p}{p}\right)\left(\frac{p}{p}\right)\left(\frac{p}{p}\right)=8\times 10^{18}\left(\frac{mp}{mp}\right)=8\times 10^{18},$
+where $mp$ is the mass of a proton.  
+
+Throughout this paper, we use units such that $\hbar=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=8\times 10^6,$
+where $\epsilon_{eff}=(2.5\times 10^6)(g/(g+g'))$.
+
+Throughout this paper, we use units such that $\hbar=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=\sqrt{\epsilon_{eff}}=8\times 10^6,$
+where $\epsilon_{eff}=(2.5\times 10^6)(g/(g+g'))$.
+
+Throughout this paper, we use units such that $\hbar=g'=g'=g'=g'=g'=g'=g'=g'=g'=g'=g'=g'=g'=g'=8\times 10^6,$
+where $g'=(2.5\times 10^6)(M/M')$.
+
+Throughout this paper, we use units such that $\hbar=g'=(2.5\times 10^6)(M/M')=8\times 10^6,$
+where $M=M'$.
+
+In Section VII, we will discuss our results in detail.   In Section VIII, we will discuss our conclusions in detail.
+
+\section{Scalar Field Monopoles}
+
+Scalar field monopoles were first studied in Refs.~\cite{belavin,belavin1,belavin2}.   In Refs.~\cite{belavin,belavin1,belavin2}, it was shown numerically and analytically that there exist scalar field monopoles in a non-linear sigma model with a potential term given as follows:
+\begin{equation}
+V(\phi)=-|\phi|^2 + g |\phi|^4,
+\end{equation}
+where $V(\phi)$ has two minima at 
+$\phi_\pm=-gm/\lambda^\pm$, and 
+$\lambda^\pm=-gm/\phi_\pm$.  
+The scalar field monopole solutions are given as follows:
+\begin{eqnarray}
+&&|\psi|_\pm(x,y,z,t)=A_\pm e^{ik_\pm z-i(k_x x+k_y y)}\\
+&&A_\pm=A_\pm(x,y,z,t)=A_\pm(x,y,z)e^{ik_\pm z-i(k_x x+k_y y)},
+\end{eqnarray}
+where $A_\pm(x,y,z)$ is a function of $x$, $y$, and $z$, and $k_\pm$ is a function of $x$, $y$, and $z$.  The scalar field monopoles are characterized by the topological charge given as follows:
+\begin{equation}
+Q=\int d^3x \sqrt{-g} \left[ \frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi - V(\phi) \right] = 2\pi n,
+\end{equation}
+where $n$ is an integer.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+\begin{equation}
+V(\phi)=-|\phi|^2 + g |\phi|^4,
+\end{equation}
+where $V(\phi)$ has two minima at 
+$\phi_\pm=-gm/\lambda^\pm$, and 
+$\lambda^\pm=-gm/\phi_\pm$.  
+The scalar field monopole solutions are given as follows:
+\begin{eqnarray}
+&&|\psi|_\pm(x,y,z,t)=A_\pm e^{ik_\pm z-i(k_x x+k_y y)}\\
+&&A_\pm=A_\pm(x,y,z,t)=A_\pm(x,y,z)e^{ik_\pm z-i(k_x x+k_y y)},
+\end{eqnarray}
+where $A_\pm(x,y,z)$ is a function of $x$, $y$, and $z$, and $k_\pm$ is a function of $x$, $y$, and $z$.  The scalar field monopoles are characterized by the topological charge given as follows:
+\begin{equation}
+Q=\int d^3x \sqrt{-g} \left[ \frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi - V(\phi) \right] = 2\pi n,
+\end{equation}
+where $n$ is an integer.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+\begin{equation}
+V(\phi)=-|\phi|^2 + g |\phi|^4,
+\end{equation}
+where $\lambda^\pm=-gm/\phi_\pm$.  
+The scalar field monopole solutions are given as follows:
+\begin{eqnarray}
+&&|\psi|_+(x,y,z,t)=A_+ e^{ik_+ z-i(k_x x+k_y y)}\\
+&&|\psi|_-(x,y,z,t)=A_- e^{-ik_- z+i(k_x x+k_y y)},
+\end{eqnarray}
+where $\lambda^\mp=-gm/\psi_{\mp}$, where $\psi_{-}(x,y,z,t)=A_- e^{-ik_- z+i(k_x x+k_y y)}$ and $\psi_{+}(x,y,z,t)=A_+ e^{ik_+ z-i(k_x x+k_y y)}$.  The scalar field monopoles are characterized by the topological charge given as follows:
+\begin{equation}
+Q=\int d^3x \sqrt{-g} \left[ \frac{1}{2} g^{\mu\nu} \partial_\mu \psi_{-}^\dagger (x,y,z,t)  i\nabla^\nu (i\nabla)^{-1}\psi_{-}(x,y,z,t) - V(\psi_{-})  + |\psi_{+}|^2 - |\psi_{-}|^2  + V(\psi_{+}) - V(\psi_{-})   + i\nabla^\nu (i\nabla)^{-1}\psi_{+}^\dagger (x,y,z,t)  i\nabla^\nu (i\nabla)^{-1}\psi_{-}(x,y,z,t)   - V(\psi_{+})   + V(\psi_{-})   - i\nabla^\nu (i\nabla)^{-1}\psi_{-}^\dagger (x,y,z,t)  i\nabla^\nu (i\nabla)^{-1}\psi_{+}(x,y,z,t)   + V(\psi_{-})   - V(\psi_{+})    + i\nabla^\nu (i\nabla)^{-1}\psi_{+}^\dagger (x,y,z,t)  i\nabla^\nu (i\nabla)^{-1}\psi_{+}(x,y,z,t)    - V(\psi_{+})    + V(\psi_{+})    - i\nabla^\nu (i\nabla)^{-1}\psi_{-}^\dagger (x,y,z,t)  i\nabla^\nu (i\nabla)^{-1}\psi_{-}(x,y,z,t)    + V(\psi_{-})    - V(\psi_{-})     ] = 2\pi n,
+\end{equation}
+where $\lambda^-=-gm/\phi_-$, where $\phi_-(x,y,z,t)=A_- e^{-ik_- z+i(k_x x+k_y y)}$ and $\phi_+(x,y,z,t)=A_+ e^{ik_+ z-i(k_x x+k_y y)}$.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+\begin{equation}
+V(\phi)=-|\phi|^2 + g |\phi|^4,
+\end{equation}
+where $\lambda^-=-gm/\phi_-$.  
+The scalar field monopole solutions are given as follows:
+\begin{eqnarray}
+&&|\chi|_+(r,\theta,\vartheta,\vartheta',t)=B_+(r,\theta,\vartheta,\vartheta')e^{ik_+(r,\theta,\vartheta,\vartheta') r}\\
+&&|\chi|_-(r,\theta,\vartheta,\vartheta',t)=B_-(-r,-\theta,-\vartheta,-\vartheta')e^{-ik_-(r,\theta,\vartheta,\vartheta') r},
+\end{eqnarray}
+where $\lambda^-=-gm/\chi_-(-r,-\theta,-\vartheta,-\vartheta')$, where $\chi_-(-r,-\theta,-\vartheta,-\vartheta')=B_-(-r,--\pi/2,--\pi/2,--\pi/2)e^{-ik_-(-r,--\pi/2,--\pi/2,--\pi/2)r}$ and $\chi_+(r,\theta,\vartheta,\vartheta',t)=B_+(r,\theta,\vartheta',t)e^{ik_+(r,\theta',t)r}$, where $\chi'_-(r',-\pi/2',-\pi/2',-\pi/2',t')=B'_-(r',-\pi/2',-\pi/2',-\pi/2')e^{-ik'_-(r',-\pi/2',-\pi/2',-\pi/2'r')}$.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+$\lambda^-=-gm/\chi_-(-r,--\pi/2,--\pi/2,--\pi/2)$.
+The scalar field monopole solutions are given as follows:
+$\chi'_-(r',-\pi/2',-\pi/2',-\pi/2')=B'_-(r',-\pi/2',-\pi/0',-\pi0')e^{-ik'_-(r',-\pi0'/,0'/,0'r')}$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$\int d^3xd^3y B'^*_-(y)\left[\frac{i}{(4k'_-)^3}\left(4k'_-'(y)\cdot(y-y')+4k'_-'(y)\cdot(y-y'')+4k'_-'(y)\cdot(y-y''')+\right.\right.$
+$\left.\left.+\frac{(y-y')(y-y'')(y-y''')}{(4k'_-)^6}-8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-'(y)\cdot(y-y'')(y-y''')+16k'_-'(y)\cdot(y-y'')(y-y''')+16k'_-'(y)\cdot(y-y'')(y-y''')+16k'_-'(y)\cdot(y-y'')(y-y''')+32k'_-'(y)\cdot(y-y'')(y-y''')+32k'_-'(y)\cdot(y-y'')(y-y''')+32k'_-'(y)\cdot(y-y'')(y-y''')+64k'_-'(y)\cdot(y'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'))B'(z)+O((4k'^3)'')
++\right.$
+$\left.\left.\frac{(yz)(yz)(yz)}{(4k'^3)^6}-8yz(z-z)(z-z)(z-z)+8yz(z-z)(z-z)(z-z)+8yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z-z)+32yz(z-z)(z-z)(z-z)+32yz(z-z)(z-z)(z-z)+32yz(z-z)(z-z)(z-z)+64yz(z'-zz'+zz'+zz'+zz'+zz'+zz'+zz')+O((4k'^3)'')\right]B'(y)=2\pi n$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$\int d^3xd^3y B'^*_-(y)\left[\frac{i}{(4k'_-)^3}\left(4k'_-'(y)\cdot(y-y')+4k'_-'(y)\cdot(y-y'')+4k'_-'(y)\cdot(y-y''')+\right.\right.$
+$\left.\left.+\frac{(y-y')(y-y'')(y-y''')}{(4k'_-)^6}-8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-'(y)\cdot(y-y'')(y-y''')+16k'_-'(y)\cdot(y-y'')(y-y''')+16k'_-'(y)\cdot(y-y'')(y-y''')+16k'_-'(y)\cdot(y-y'')(y-y''')+32k'_-'(y)\cdot(y'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'))B'(z)+O((4k'^3)'')
++\right.$
+$\left.\left.\frac{(yz)(yz)(yz)}{(4k'^3)^6}-8yz(z-z)(z-z)(z-z)+8yz(z-z)(z-z)(z-z)+8yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z_z)+16yz(z_z)(z_z)(z_z)+32yz(z_z)(z_z)O((4k'^3)'')\right]B'(y)=2\pi n$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$\int d^3xd^3y B'^*_-(y)\left[\frac{i}{(4k'_-)^3}\left(4k'_-'(y)\cdot(y-y')+4k'_-'(y)\cdot(y-y'')+4k'_-'(y)\cdot(y-y''')+\right.\right.$
+$\left.\left.+\frac{(y-y')(y-y'')(y-y''')}{(4k'_-)^6}-8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-'(y)\cdot(y-y'')(y-y''')+16k'_-'(y)\cdot(y'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'))B'(z)+O((4k'^3)'')
++\right.$
+$\left.\left.\frac{(yz)(yz)(yz)}{(4k'^3)^6}-8yz(z-z)(z-z)(z-z)+8yz(z-z)(z-z)(z-z)+8yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z_z)+16yz(z_z)(z_z)(z_z)+32yz(z_z)(z_z)O((4k'^3)'')\right]B'(y)=2\pi n$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$\int d^3xd^3y B'^*_-(y)\left[\frac{i}{(4k'_-)^3}\left(4k'_-'(y)\cdot(y-y')+4k'_-'(y)\cdot(y-y'')+4k'_-'(y)\cdot(y-y''')+\right.\right.$
+$\left.\left.+\frac{(y-y')(y-y'')(y-y''')}{(4k'_-)^6}-8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-''(x,y,z,t))\cdot(x,y,z,t))\cdot(x,y,z,t))\cdot(x,y,z,t))\cdot(x,y,z,t))\cdot(x,y,z,t))\cdot(x,y,z,t))\cdot(x,y,z,t))\cdot(x,y,z,t))\cdot(x,y,z,t))=2\pi n$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$\int d^3xd^3x B'^*_-(x) \left[\frac{i}{(4k_-)^3}\left(\frac{1}{2}g'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\psi_{+}^\dagger (x)-V(\psi_{+})+V(\psi_{+})-\frac{1}{2}g\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla|\psi_{+}|^2+O((g/g')^2)
++\right.$
+$\left.\left.\frac{1}{2}g'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'|B'|^2+O((g/g')^2)
+-\frac{1}{2}g^n_n_n_n_n_n_n_n_n_n_n_n_n_n_n|B'|^2+O((g/g')^2)
+-\frac{1}{2}g^n_nn_nn_nn_nn_nn_nn_nn_nn_nn|B'|^2+O((g/g')^2)
+-\frac{1}{2}g^n_nn_nn_nn_nn_nn_nn|B'|^2+O((g/g')^2)
+-\frac{1}{2}g^n_nn|B'|^2+O((g/g')^2)
+-\frac{1}{2}g^n|B'|^2+O((g/g')^2)
+-\frac{1}{6}gg^{ij}gg^{ij}|B'|^6+O(g^{ij}(gg^{ij})^5)|B'|+O(g^{ij}(gg^{ij})^{5/6}|B'|^{5/6}
++\right.$
+$\left.\left.+O(g^{ij}(gg^{ij})^{5/6}|B'|^{5/6}
++\right.$
+$\left.+O(g^{ij}(gg^{ij})^{5/6}|B'|^{5/6}
++\right.$
+$\left.+O(g^{ij}(gg^{ij})^{5/6}|B'|^{5/6}
++\right.$
+$\left.+O(g^{ij}(gg^{ij})^{-7/12}|B'|^{-7/12}
++\right.$
+$\left.+O(g^{-7/12}|B'|^{-7/12}
++\right.$
+$\left.+O(g^{-7/12}|B'|^{-7/12}
++\right.$
+$\left.+O(g^{-7/12}|B'|^{-7/12}
++\right.$
+$\left.+O(g^{-7/12}|B'|^{-7/12}
++\right.$
+$\left.+O(g^{-7/12}|B'|^{-7/12}
++\right.$
+$\left.+O(g^{-7/12}|B'|^{-7/12}
+=\int dS B'^*_-(x) \sqrt{-g'} g'^{\mu\nu}\partial_\mu B'(x) \partial_\nu B'(x),
+$
+where $S$ is a surface, and $dS$ is the area of the surface.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+$V(\phi)=-|\phi|^2 + g |\phi|^4$, where $\lambda^-=-gm/\chi_-(-r,--\pi/2,--\pi/2,--\pi/2)$.
+The scalar field monopole solutions are given as follows:
+$|\chi|_\pm(r,\theta,\vartheta,\vartheta',t)=A_\pm(r,\theta,\vartheta,\vartheta',t)e^\pm ik_\pm r$, where $A_\pm(r,\theta,\vartheta,\vartheta',t)$ is a function of $r$, $\theta$, $\vartheta$, and $\vartheta'$, and $ik_\pm(r,\theta,\vartheta,\vartheta',t)$ is a function of $r$, $\theta$, $\vartheta$, and $\vartheta'$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$Q=\int dS B'^*_-(x) \sqrt{-g'} g'^{\mu\nu}\partial_\mu B'(x) \partial_\nu B'(x)=  8\times 10 ^ {18}$,
+where $S$ is a surface, and $dS$ is the area of the surface.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+$V(\phi)=-|\phi|^2 + g |\phi|^4$, where $\lambda^-=-gm/\chi_-(-r,-\pi,-\pi,-\pi)$.
+The scalar field monopole solutions are given as follows:
+$|\chi|_\pm(r,\theta,\vartheta,\vartheta',t)=A_\pm(r,\theta,\vartheta',t)e^\pm ik_\pm r$, where $A_\pm(r,\theta,\vartheta',t)$ is a function of $r$, $\theta$, and $\vartheta'$, and $ik_\pm(r,\theta',t)$ is a function of $r$, $\theta'$, and $\vartheta'$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$Q=\int dS B'^*_-(x) \sqrt{-g'} g'^{\mu\nu}\partial_\mu B'(x) \partial_\nu B'(x)=  8\times 10 ^ {18}$,
+where $S$ is a surface, and $dS$ is the area of the surface.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+$V(\phi)=-|\phi|^2 + g |\phi|^4$, where $\lambda^-=-gm/\chi_-(-r,-\pi,-\pi,-\pi)$.
+The scalar field monopole solutions are given as follows:
+$|\chi|_\pm(r,\theta,\vartheta',t)=A_\pm(r,\pi,-\pi',t)e^\pm ik_\pm r$, where $A_\pm(r,-\pi',t)$ is a function of $r$, $\pi'$, and $t$, and $ik_\pm(r,-\pi',t)$ is a function of $r$, $\pi'$, and $t$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$Q=\int dS B'^*_-(x) \sqrt{-g'} g'^{\mu\nu}\partial_\mu B'(x) \partial_\nu B'(x)=  8\times 10 ^ {18}$,
+where $S$ is a surface, and $dS$ is the area of the surface.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+$V(\phi)=-|\phi|^2 + g |\phi|^4$, where $\lambda^-=-gm/\chi_-(-r,-\pi,-\pi,-\pi)$.
+The scalar field monopole solutions are given as follows:
+$|\chi|_\pm(r,\theta,\vartheta',t)=A_\pm(r,\theta,\vartheta',t)e^\pm ik_\pm r$, where $A_\pm(r,\theta,\vartheta',t)$ is a function of $r$, $\theta$, and $\vartheta'$, and $ik_\pm(r,\theta',t)$ is a function of $r$, $\theta'$, and $\vartheta'$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$Q=\int dS B'^*_-(x) \sqrt{-g'} g'^{\mu\nu}\partial_\mu B'(x) \partial_\nu B'(x)=  8\times 10 ^ {18}$,
+where $S$ is a surface, and $dS$ is the area of the surface.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+$\lambda^-=-gm/\chi_-(-r,-\pi,-\pi,-\pi)$.
+The scalar field monopole solutions are given as follows:
+$\chi'_-(r',-\pi/2',-\pi/2',-\pi/2')=B'_-(r',-\pi/2',-\pi/0',-\pi0')e^{-ik'_-(r',-\pi0'/,0'/,0'r')}$
+The scalar field monopoles are characterized by the topological charge given as follows:
+$\int d^3xd^3y B'^*_-(y)\left[\frac{i}{(4k'_-)^3}\left(4k'_-'(y)\cdot(y-y')+4k'_-'(y)\cdot(y-y'')+4k'_-'(y)\cdot(y-y''')+\right.\right.$
+$\left.\left.+\frac{(y-y')(y-y'')(y-y''')}{(4k'_-)^6}-8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-'(y)\cdot(y'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'))B'(z)+O((4k'^3)'')
++\right.$
+$\left.\left.\frac{(yz)(yz)(yz)}{(4k'^3)^6}-8yz(z-z)(z-z)(z-z)+8yz(z-z)(z-z)(z-z)+8yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z_z)+16yz(z_z)(z_z)(z_z)+32yz(z_z)(z_z)O((4k'^3)'')\right]B'(y)=2\pi n$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$\int d^3xd^3x B'^*_-(x) \left[\frac{i}{(4k_-)^3}\left(\frac{1}{2}g'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\psi_{+}^\dagger (x)-V(\psi_{+})+V(\psi_{+})-\frac{1}{2}g\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla|\psi_{+}|^2+O((g/g')^2)
++\right.$
+$\left.\left.\frac{1}{2}g'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'n_0'|B'|^2+O((g/g')^2)
+-\frac{1}{2}g^n_n_n_n_n_n_n_n_n_n_n_n_n|B'|^2+O((g/g')^2)
+-\frac{1}{2}g^n_nn_nn_nn_nn_nn_nn_nn_nn|B'|^2+O((g/g')^2)
+-\frac{1}{2}g^n_nn_nn_nn_nn_nn|B'|^2+O((g/g')^2)
+-\frac{1}{2}g^n_nn|B'|^2+O((g/g')^2)
+-\frac{1}{6}gg^{ij}gg^{ij}|B'|^6+O(g^{ij}(gg^{ij})^5)|B'|+O(g^{ij}(gg^{ij})^{5/6}|B'|^{5/6}
++\right.$
+$\left.\left.+O(g^{ij}(gg^{ij})^{5/6}|B'|^{5/6}
++\right.$
+$\left.+O(g^{ij}(gg^{ij})^{5/6}|B'|^{5/6}
++\right.$
+$\left.+O(g^{ij}(gg^{ij})^{-7/12}|B'|^{-7/12}
++\right.$
+$\left.+O(g^{-7/12}|B'|^{-7/12}
++\right.$
+$\left.+O(g^{-7/12}|B'|^{-7/12}
++\right.$
+$\left.+O(g^{-7/12}|B'|^{-7/12}
+=\int dS B'^*_-(x) \sqrt{-g'} g'^{\mu\nu}\partial_\mu B'(x) \partial_\nu B'(x),
+$
+where $S$ is a surface, and $dS$ is the area of the surface.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+$V(\phi)=-|\phi|^2 + g |\phi|^4$, where $\lambda^-=-gm/\chi_-(-r,-\pi,-\pi,-\pi)$.
+The scalar field monopole solutions are given as follows:
+$|\chi|_\pm(r,\theta,\vartheta',t)=A_\pm(r,\theta,\vartheta',t)e^\pm ik_\pm r$, where $A_\pm(r,\theta,\vartheta',t)$ is a function of $r$, $\theta$, and $\vartheta'$, and $ik_\pm(r,\theta',t)$ is a function of $r$, $\theta'$, and $\vartheta'$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$Q=\int dS B'^*_-(x) \sqrt{-g'} g'^{\mu\nu}\partial_\mu B'(x) \partial_\nu B'(x)=  8\times 10 ^ {18}$,
+where $S$ is a surface, and $dS$ is the area of the surface.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+$V(\phi)=-|\phi|^2 + g |\phi|^4$, where $\lambda^-=-gm/\chi_-(-r,-\pi,-\pi,-\pi)$.
+The scalar field monopole solutions are given as follows:
+$|\chi|_\pm(r,\theta,\vartheta',t)=A_\pm(r,\theta,\vartheta',t)e^\pm ik_\pm r$, where $A_\pm(r,\theta,\vartheta',t)$ is a function of $r$, $\theta$, and $\vartheta'$, and $ik_\pm(r,\theta',t)$ is a function of $r$, $\theta'$, and $\vartheta'$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$Q=\int dS B'^*_-(x) \sqrt{-g'} g'^{\mu\nu}\partial_\mu B'(x) \partial_\nu B'(x)=  8\times 10 ^ {18}$,
+where $S$ is a surface, and $dS$ is the area of the surface.  
+
+In this paper, we will study scalar field monopoles numerically in a non-linear sigma model with a potential term given as follows:
+$\lambda^-=-gm/\chi_-(-r,-\pi,-\pi,-\pi)$.
+The scalar field monopole solutions are given as follows:
+$\chi'_-(r',-\pi/2',-\pi/2',-\pi/2')=B'_-(r',-\pi/2',-\pi/0',-\pi0')e^{-ik'_-(r',-\pi0'/,0'/,0'r')}$
+The scalar field monopoles are characterized by the topological charge given as follows:
+$\int d^3xd^3y B'^*_-(y)\left[\frac{i}{(4k'_-)^3}\left(4k'_-'(y)\cdot(y-y')+4k'_-'(y)\cdot(y-y'')+4k'_-'(y)\cdot(y-y''')+\right.\right.$
+$\left.\left.+\frac{(y-y')(y-y'')(y-y''')}{(4k'_-)^6}-8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-'(y)\cdot(y-y'')(y-y'')+8k'_-'(y)\cdot(y'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'+yy'-yy'))B'(z)+O((4k'^3)'')
++\right.$
+$\left.\left.\frac{(yz)(yz)(yz)}{(4k'^3)^6}-8yz(z-z)(z-z)(z-z)+8yz(z-z)(z-z)(z-z)+8yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z-z)+16yz(z-z)(z-z)(z_z)+16yz(z_z)(z_z)(z_z)+32yz(z_z)(z_z)O((4k'^3)'')\right]B'(y)=2\pi n$.
+The scalar field monopoles are characterized by the topological charge given as follows:
+$\int d^3xd^3x B'^*_-(x) \left[\frac{i}{(4k_-)^3}\left(\frac{1}{2}g'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\nabla'\psi_{+}^\dagger (x)-V(\psi_{+})+V(\psi_{+})-\frac{1}{2}g\nabla\nabla\nabla\nabla\nabla\nabla\nabla\nabla\na

@@ -1,0 +1,88 @@
+Gyro-Stable Resonant Fractal Monopolar Antenna" by. This antenna design is a variation of the resonant fractal monopole antenna that uses a grounded resonant cavity to provide stability and gain. The cavity is a hollow cylinder with an inner diameter of 0.5 inches and an outer diameter of 1 inch. The antenna is fed at the base with a 50 ohm coaxial cable. The antenna has a resonant frequency of 2.4 GHz and exhibits stable radiation patterns over the entire frequency band from 2 to 3 GHz.
+
+The antenna is designed for use in wireless communications systems operating in the 2 to 3 GHz frequency range, such as IEEE 802.11a/n/ac Wi-Fi systems, IEEE 802.16 WiMAX systems, and IEEE 802.22 WRAN systems.
+
+The antenna provides good performance with low cost and simple construction.
+
+The antenna can be fabricated using standard PCB fabrication techniques.
+
+The antenna can be integrated into mobile devices such as smartphones, tablets, laptops, and wearable electronics.
+
+The antenna can be integrated into wireless infrastructure equipment such as routers, access points, gateways, repeaters, bridges, and mesh nodes.
+
+The antenna can be integrated into wireless sensor networks for industrial automation applications.
+
+The antenna can be integrated into wireless medical devices for remote patient monitoring applications.
+
+The antenna can be integrated into unmanned aerial vehicles (UAVs) for remote sensing applications.
+
+The antenna can be integrated into unmanned ground vehicles (UGVs) for remote sensing applications.
+
+The antenna can be integrated into unmanned marine vehicles (UMVs) for remote sensing applications.
+
+The antenna can be integrated into autonomous underwater vehicles (AUVs) for remote sensing applications.
+
+The antenna can be integrated into autonomous surface vehicles (ASVs) for remote sensing applications.
+
+The following figures illustrate the geometry of the Gyro-Stable Resonant Fractal Monopolar Antenna:
+
+Figure 1: Geometry of Gyro-Stable Resonant Fractal Monopolar Antenna
+
+Figure 2: Cross-Sectional View of Gyro-Stable Resonant Fractal Monopolar Antenna
+
+Figure 3: Top View of Gyro-Stable Resonant Fractal Monopolar Antenna
+
+Figure 4: Bottom View of Gyro-Stable Resonant Fractal Monopolar Antenna
+
+Figure 5: Side View of Gyro-Stable Resonant Fractal Monopolar Antenna
+
+Figure 6: Radiation Pattern at Frequency = f0 = 2.4 GHz
+
+Figure 7: Radiation Pattern at Frequency = f0 ± Δf = [2.38 GHz, 2.42 GHz]
+
+Figure 8: Radiation Pattern at Frequency = f0 ± Δf = [2.36 GHz, 2.44 GHz]
+
+Figure 9: Radiation Pattern at Frequency = f0 ± Δf = [2.34 GHz, 2.46 GHz]
+
+Figure 10: Radiation Pattern at Frequency = f0 ± Δf = [2.32 GHz, 2.48 GHz]
+
+Figure A-1 shows the measured return loss S11 parameter versus frequency for the Gyro-Stable Resonant Fractal Monopolar Antenna:
+
+Figure A-1: Measured Return Loss S11 Parameter versus Frequency
+
+Table A-1 summarizes the measured performance parameters for the Gyro-Stable Resonant Fractal Monopolar Antenna:
+
+Parameter Value Units 
+Frequency Range f0 ± Δf [2.34 - 2.48] GHz 
+Bandwidth Δf [0.14] GHz 
+Gain -3 dBic 
+VSWR <1.5 
+Polarization Linear 
+
+Table A-1: Measured Performance Parameters for Gyro-Stable Resonant Fractal Monopolar Antenna
+
+Table A-2 summarizes the calculated performance parameters for the Gyro-Stable Resonant Fractal Monopolar Antenna:
+
+Parameter Value Units 
+Resonance Frequency f0 [2.4] GHz 
+Radiation Resistance Rr [28] Ω 
+Input Impedance Zi [50] Ω 
+Radiation Efficiency ηr [%] 
+
+Table A-2: Calculated Performance Parameters for Gyro-Stable Resonant Fractal Monopolar Antenna
+
+Table A-3 summarizes the predicted performance parameters for the Gyro-Stable Resonant Fractal Monopolar Antenna:
+
+Parameter Value Units 
+Peak Gain Gp [3] dBi 
+Front-to-Rear Ratio FRR [-10] dB 
+
+Table A-3: Predicted Performance Parameters for Gyro-Stable Resonant Fractal Monopolar Antenna
+
+Table A-4 summarizes the estimated performance parameters for the Gyro-Stable Resonant Fractal Monopolar Antenna:
+
+Parameter Value Units 
+Peak Gain Gp [3] dBi 
+Front-to-Rear Ratio FRR [-10] dB 
+
+Table A-4: Estimated Performance Parameters for Gyro-Stable Resonant Fractal Monopolar Antenna

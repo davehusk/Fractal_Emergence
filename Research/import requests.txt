@@ -1,0 +1,14 @@
+import requests
+
+url = "https://api.openai.com/v1/your-endpoint-url"
+headers = {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer your-api-key"
+}
+
+data = {
+      "param1": "value1",
+      "param2": "value2"
+}
+
+response = requests.post(url, headers=headers, json=data)

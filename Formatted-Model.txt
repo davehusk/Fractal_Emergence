@@ -1,0 +1,469 @@
+from collections import Counter
+import re
+from nltk.corpus import stopwords
+
+# Consolidating all session text
+session_text = """
+Concept, Description, Field of Study, Related Concepts, Examples, Additional Columns,
+Spinorial Quantum Fluid Model, A theoretical framework that explains the behavior of dark matter through topological defects in a fractal spacetime geometry., Quantum Mechanics, Dark Matter, Topological defects, Fractal spacetime, Quantum fluids, Dark matter halos, Galaxy formation, -,
+2D+1D=3D Space-Time Geometry, A mathematical concept that describes the relationship between two-dimensional and one-dimensional spaces and their relationship to three-dimensional space., Mathematics, Theoretical Physics, Space-time, Dimensional analysis, Geometry, String theory, Brane cosmology, -,
+3-Spatial Dimensions and 1-Temporal Dimension, The four dimensions of space-time, with three dimensions representing space and one dimension representing time., Theoretical Physics, Special Relativity, Space-time, Four-vector, Lorentz transformation, Time dilation, Length contraction, -,
+Wave function, A mathematical description of the quantum state of a physical system, which can be used to calculate the probability of different outcomes of a measurement., Quantum Mechanics, Quantum state, Probability amplitude, Schrödinger equation, Electron in a box, Hydrogen atom, Normalization, Superposition,
+Complex scalar potential, A mathematical function used to describe the behavior of a quantum system, which can be used to calculate the wave function of the system., Quantum Mechanics, Potential energy, Schrödinger equation, Wave function, Quantum harmonic oscillator, Particle in a ring, Time-independent, Time-dependent,
+Angular momentum, A physical quantity that describes the rotation of a system around a fixed axis., Classical Mechanics, Quantum Mechanics, Torque, Moment of inertia, Rotational energy, Spinning top, Rigid body rotation, Conservation, Commutation relations,
+Spin, A type of angular momentum associated with the intrinsic rotation of a particle., Quantum Mechanics, Spin-orbit coupling, Magnetic moment, Pauli exclusion principle, Electron spin, Nuclear spin, Half-integer, Integer,
+Orbital angular momentum, A type of angular momentum associated with the motion of a particle around a fixed center., Quantum Mechanics, Central potential, Atomic orbitals, Angular momentum quantum number, Hydrogen atom, Rigid rotor, Quantization, Ladder operators,
+Radial direction and Tangential direction, Directions in space used to describe the motion of a particle., Mathematics, Physics, Spherical coordinates, Polar coordinates, Cylindrical coordinates, Planetary motion, Electrostatic potential, -,
+Quantum numbers (n, l, m), Mathematical quantities used to describe the quantum state of a physical system., Quantum Mechanics, Atomic orbitals, Hydrogen atom, Angular momentum, Electron configuration, Shell model, Principal, Azimuthal, Magnetic,
+Spherical harmonics Ylm, Mathematical functions used to describe the angular dependence of a quantum system., Mathematics, Quantum Mechanics, Legendre polynomials, Laplace equation, Separation of variables, Hydrogen atom, Quantum dots, Orthogonality, Normalization,
+Energy eigenvalues En, The allowed energy levels of a quantum system., Quantum Mechanics, Time-independent Schrödinger equation, Eigenvalues, Eigenfunctions, Particle in a box, Harmonic oscillator, Degeneracy, Spacing,
+Reduced Planck constant ℏ=h/2π, A fundamental constant used in quantum mechanics., Quantum Mechanics, Planck's constant, Uncertainty principle, Wave-particle duality, Photoelectric effect, Quantum tunneling, -,
+Mass-energy equivalence mc^2, The relationship between mass and energy, as described by Einstein's theory of relativity., Theoretical Physics, Special Relativity, Energy-momentum relation, Rest energy, Relativistic mass, Nuclear reactions, Gravitational waves, -,
+Gravitational binding energy Egrav=-GmM/r, The energy required to separate two objects due to their gravitational attraction., Classical Mechanics, Gravitation, Potential energy, Gravitational constant, Kepler's laws, Binary star systems, Galaxy clusters, -,
+Electrostatic potential energy Epot=-ZeffeZe/r, The energy required to separate two charged objects due to their electrostatic attraction., Electromagnetism, Coulomb's law, Electric potential, Electric field, Capacitors, Electric dipoles, -,
+Coulomb interaction Ze⋅Ze/4πε,r,, The force between two charged objects, as described by Coulomb's law., Electromagnetism, Electric charge, Permittivity of free space, Electric field, Electrostatic forces, Ionization energy, -,
+Coulomb's law r→Distance Between Particles, A mathematical description of the force between two charged objects., Electromagnetism, Electric charge, Permittivity of free space, Coulomb's constant, Electrostatic forces, Electric field lines, -,
+e, m→Electron, Proton Charges, The charges of an electron and a proton., Electromagnetism, Elementary particles, Electric charge, Fundamental constants, Atomic structure, Chemical reactions, -,
+ε0→Permittivity of Free Space, A fundamental constant used in electromagnetism., Electromagnetism, Electric field, Electric displacement, Coulomb's law, Capacitance, Dielectrics, -,
+Force Constant kCoulomb=kq1q2/2εo,r,, A constant used to describe the force between two charged objects., Electromagnetism, Electric charge, Permittivity of free space, Coulomb's constant, Electric dipoles, Electric polarization, -,
+Charge, Particle Species q1,q2,e,p, Mathematical quantities used to describe the charge and type of particles., Electromagnetism, Elementary particles, Electric charge, Fundamental constants, Atomic structure, Chemical reactions, -,
+Density Parameter ρa~a=~ρ, Mathematical quantities used to describe the density of a system., Cosmology, Critical density, Cosmic microwave background, Dark matter, Big Bang nucleosynthesis, Large scale structure, -,
+Radius Parameter R←Center of the Nucleus, The center of the nucleus., Nuclear Physics, Atomic nucleus, Nuclear radius, Nuclear force, Nuclear reactions, Radioactive decay, -,
+Classical Limit r≫Ra,Rb,rA,B,C...Radii of Atoms in Molecules, The limit in which the distance between particles is much larger than the size of the particles., Quantum Mechanics, Chemistry, Classical mechanics, Molecular structure, Intermolecular forces, van der Waals forces, Hydrogen bonding, -,
+Electron density ρ(r)=n(r)e−βEr(n(r)=Number Density), A mathematical description of the density of electrons in a system., Condensed Matter Physics, Electron gas, Density functional theory, Thomas-Fermi approximation, Metals, Semiconductors, -,
+Boltzmann Constant β=(En+kBT)/(kBTr), A constant used in statistical mechanics., Statistical Mechanics, Thermodynamics, Boltzmann distribution, Entropy, Free energy, Ideal gas law, Maxwell-Boltzmann distribution, -,
+Boltzmann Distribution P(E)=(eEkBT)/(ekBE+(kBTR)), A mathematical description of the probability of finding an electron at a given energy E., Statistical Mechanics, Fermi-Dirac distribution, Bose-Einstein distribution, Density of states, Electron transport, Thermoelectricity, -,
+Boltzmann Factor ke−βE/(keEB+(KBTR)), A mathematical description of the probability of finding a particle in a given state., Statistical Mechanics, Partition function, Free energy, Entropy, Chemical equilibrium, Phase transitions, -,
+Maxwell-Boltzmann Statistics, A statistical description of the behavior of a system at the classical level., Statistical Mechanics, Boltzmann distribution, Ideal gas law, Maxwell's equations, Gas dynamics, Transport phenomena,
+Spatial Correlation Function,A measure of the spatial correlations in a system,Physics,Quantum mechanics,Density correlations in a ferromagnetic material,Formula: G(r)=⟨Ψ†(r′)Ψ(r+r′)⟩⟨Ψ†(r′)Ψ(r′)⟩−1
+Fractal Dimensionality,A measure of the complexity of a fractal pattern,Mathematics,Fractals,Coastlines,Formula: D=log(N)/log(1/r)
+Rotational Symmetry,A property of an object that remains unchanged under rotations about an axis,Geometry,Symmetry,Regular polygons,Order of symmetry
+Translational Symmetry,A property of an object that remains unchanged under translations in space,Geometry,Symmetry,Crystal lattices,Lattice vectors
+Universal Medium,A hypothetical medium that permeates all of space and transmits electromagnetic waves,Physics,Electromagnetism,Luminiferous aether,Speed of light
+Structural Defects,Irregularities in the arrangement of atoms or molecules in a material,Materials Science,Crystallography,Dislocations,Vacancies,Interstitials
+Dark Energy,A hypothetical form of energy that is thought to be responsible for the accelerated expansion of the universe,Cosmology,General Relativity,Cosmic inflation,Equation of state
+Dark Matter,A hypothetical form of matter that does not emit or absorb light, but is detectable through its gravitational effects,Astronomy,Cosmology,Galaxy rotation curves,Gravitational lensing
+Galaxy Rotation Curves,The velocity of stars and gas in a galaxy as a function of distance from the center,Astronomy,Dynamics,Dark matter,Kepler's laws
+Cosmic Microwave Background Radiation,The thermal radiation left over from the Big Bang,Astronomy,Cosmology,Blackbody radiation,Redshift
+Supernovae,The explosive death of a massive star,Astronomy,Nuclear Physics,Neutron stars,White dwarfs
+Gravitational Waves,Ripples in the fabric of spacetime caused by the acceleration of massive objects,Physics,General Relativity,LIGO,Virgo
+Self-Similarity,A property of an object that appears the same at different scales,Mathematics,Fractals,Mandelbrot set,Koch snowflake
+Scaling Laws,Relationships between the size of an object and its properties,Physics,Statistical Mechanics,Power laws,Allometric scaling
+Information Capacity,The maximum amount of information that can be transmitted through a communication channel,Information Theory,Entropy,Channel capacity,Shannon's theorem
+Density of States: The density of states function, W(E), describes the number of states per unit energy interval available to a system. The given formula is for a three-dimensional system, where n is the particle density, kB is the Boltzmann constant, m is the mass of the particle, h̄ is the reduced Planck's constant, e is the elementary charge, and c is the speed of light.
+Spatial Correlation Function: The spatial correlation function, G(r), describes the spatial correlations in a system. It is defined as the ensemble average of the product of the wave function and its Hermitian conjugate at two different points in space, r and r+r′. The angular brackets denote the ensemble average.
+Operators for the Wave Function and its Hermitian Conjugate: In quantum mechanics, the wave function, Ψ, describes the state of a system. The Hermitian conjugate of the wave function, Ψ†, is used to calculate the probability density of finding a particle at a particular point in space.
+Spatial Fourier Transform: The spatial Fourier transform, G(q), is a mathematical operation that transforms a function from real space to reciprocal space. It is used to analyze the spatial correlations in a system. The given formula is for a three-dimensional system, where q is the wave vector, r is the position vector, and i is the imaginary unit.
+Probabilistic Interpretation and Ensemble Average: In quantum mechanics, the square of the absolute value of the wave function, |Ψ|², is interpreted as the probability density of finding a particle at a particular point in space. The ensemble average is used to calculate the average value of an observable over many realizations of the system.
+Phase Coherence: Phase coherence is a measure of the correlation between the phases of two waves. The given formula describes the spatial correlation function, g(rc), for a system with phase coherence. The subscripts i and j denote two different points in space, and rc is the correlation length.
+Statistical Mechanics: Statistical mechanics is a branch of physics that uses statistical methods to describe the behavior of large systems of particles. It is used to derive the thermodynamic properties of a system from the microscopic behavior of its constituent particles.
+Thermodynamic State Variables: Thermodynamic state variables are quantities that describe the state of a system. The given list includes pressure (p), volume (V), temperature (T), internal energy (U), Helmholtz free energy (F), Gibbs free energy (G), and entropy (S).
+Microstates: A microstate is a specific configuration of the particles in a system. The number of microstates, N, describes the number of ways that the particles can be arranged.
+Total Number of Particles: The total number of particles, Np, is the number of particles in the system.
+Number of Spin States per Particle: The number of spin states per particle, ns, is the number of possible spin orientations for each particle.
+Degeneracy: Degeneracy, deg(N,Np,ns), is the number of microstates that correspond to the same macroscopic state. It is a function of the number of microstates, the total number of particles, and the number of spin states per particle.
+Concept,Description,Field of Study,Related Concepts,Examples,Additional Columns
+Abiogenesis,Origin of life from non-living matter,Evolutionary Biology,Chemical Evolution,Self-Replicating Molecules,First Cells,
+Quantum Field Theory Concepts Applied to Abiogenesis,,,,,
+Complex Scalar Potential Ψ(r),Describing spacetime metric perturbations around background FLRW solution,Quantum Field Theory,Scalar Field,FLRW Solution,Metric Perturbations,Reduced Planck's Constant h/2π,Orbital Angular Momentum Vector S,
+Angular Momentum Operators L̂z,L̂x,y,z,Operators describing the intrinsic rotation of particles,Quantum Mechanics,Spin,Spin-Orbit Coupling,Magnetic Moment,Pauli Exclusion Principle,Electron Spin,Nuclear Spin,
+Spin States |Ψ⟩=ψr(x,y,z)e−iS·r/hc|Ψ⟩,Representation of a quantum system's state involving spatial and spin components,Quantum Mechanics,Quantum State,Wave Function,Scalar Potential,Reduced Planck's Constant h/2π,Orbital Angular Momentum Vector S,
+Fractal Space-Time Geometry,,,,,
+Topologically Nontrivial Defect Structures,Structures in spacetime with nontrivial topology,Mathematics,Topology,Defects,Quantum Gravity,Unified Framework,Massive Spinor Particles,
+Planck Epoch,Earliest phase of the universe's existence,Theoretical Physics,Cosmology,Big Bang Singularity,Quantum Fluctuations,
+Grand Unification Era,Phase of the early universe where fundamental forces unified,Particle Physics,Grand Unified Theory,Electroweak Symmetry Breaking,
+Electroweak Symmetry Breaking,Transition where electroweak force separates into electromagnetic and weak forces,Particle Physics,Electroweak Theory,Quantum Field Theory,
+Quark–Gluon Plasma Phase Transition,Transition where quarks and gluons become confined to form stable hadrons,Quantum Chromodynamics,Quarks,Gluons,Hadrons,
+Hadronization Phase Transition,Formation of baryonic matter as up-down and down-up quark pairs combine,Quantum Chromodynamics,Baryons,Mesons,
+Nucleosynthesis Period Begins,Onset of nuclear fusion reactions in stars,Astrophysics,Nuclear Fusion,Stellar Nucleosynthesis,Light Elements,
+Quantum Field Theory Concepts Applied to Abiogenesis Phenomena,,,,,
+Complex Scalar Potential Φ(r,t),Describing spacetime metric perturbations around background FLRW solution,Quantum Field Theory,Scalar Field,FLRW Solution,Metric Perturbations,Reduced Planck's Constant h/2π,Orbital Angular Momentum Vector S,
+Polarized Gravitational Waves,Polarization states of gravitational waves,General Relativity,Gravitational Waves,Wave Modes,Polarization,
+Stress-Energy Tensor Tµν,Describing the distribution of energy and momentum in spacetime,General Relativity,Energy-Momentum Distribution,Tensors,Conservation,
+Energy-Momentum Conservation Equation,Equation describing the conservation of energy and momentum in spacetime,General Relativity,Conservation Laws,Tensor Equations,
+Einstein Equations,Equations describing the gravitational interactions in spacetime,General Relativity,Gravitational Field Equations,Tensor Equations,
+Fluctuation-Dissipation Relation,Relation describing the behavior of linear response functions,Statistical Mechanics,Linear Response Functions,Thermal Equilibrium,
+General Relativistic Hydrodynamic Equations,Equations describing fluid motion in a relativistic context,General Relativity,Hydrodynamics,Fluid Motion,Tensor Equations,
+Thermal Relaxation Time,Time scale for a system to reach thermal equilibrium,Statistical Mechanics,Relaxation Time,Boltzmann Constant,
+Kubo Formula,Formula relating transport coefficients to linear response functions,Statistical Mechanics,Transport Coefficients,Linear Response Functions,
+Quantum Field Theory Concepts Applied to Inflation Theories,,,,,
+Complex Scalar Potential Ψ(r),Describing spacetime metric perturbations around background FLRW solution,Quantum Field Theory,Scalar Field,FLRW Solution,Metric Perturbations,Reduced Planck's Constant h/2π,Orbital Angular Momentum Vector S,
+Fractal Space-Time Geometry Models,,,,,
+Quantum gravity effects leading to an exponentially expanding "inflaton" phase,Effects of quantum gravity leading to cosmic inflation,Theoretical Physics,Cosmology,Inflaton Phase,Exponential Expansion,Quantum Fluctuations,
+Spatial Scale Factor R(t),Scale factor describing the size of the universe as a function of time,Cosmology,Scale Factor,Exponential Expansion,
+Scale Factor Expands Exponentially Ra(t)a3=Rae^(λtc)t=cet^(lambda+1)ceta=(ce^(lambda+1))at,Mathematical expression for the exponential expansion of the universe during inflation,Cosmology,Exponential Expansion,Mathematical Expression,
+Characteristic Properties of Fractal Inflaton Phase,Properties such as scale-invariant power spectrum fluctuations,Cosmology,Inflation,Scale-Invariant Power Spectrum,Quantum Fluctuations,
+Fine-Tuning Requirements for Fractal Inflaton Phase,Requirements for the scenario to match observations,Cosmology,Inflation,Fine-Tuning,Observational Consistency,
+Quantum Field Theory Concepts Applied to Gravitational Wave Physics,,,,,
+Complex Scalar Potential Φ(r,t),Describing spacetime metric perturbations around background FLRW solution,Quantum Field Theory,Scalar Field,FLRW Solution,Metric Perturbations,Reduced Planck's Constant h/2π,Orbital Angular Momentum Vector S,
+Lagrangian Density LagrangianDensity=L[φ,h],Density describing the dynamics of a system in terms of its coordinates and time derivatives,Quantum Field Theory,Lagrangian Density,Dynamics,
+Action Functional ActionFunctional=Sintegrate[d4xL],Functional describing the action of a system over spacetime,Quantum Field Theory,Action Functional,Action,
+Polarized Gravitational Waves,Polarization states of gravitational waves,General Relativity,Gravitational Waves,Wave Modes,Polarization,
+Stress-Energy Tensor Tµν,Describing the distribution of energy and momentum in spacetime,General Relativity,Energy-Momentum Distribution,Tensors,Conservation,
+Energy-Momentum Conservation Equation,Equation describing the conservation of energy and momentum in spacetime,General Relativity,Conservation Laws,Tensor Equations,
+Einstein Equations,Equations describing the gravitational interactions in spacetime,General Relativity,Gravitational Field Equations,Tensor Equations,
+Fluctuation-Dissipation Relation,Relation describing the behavior of linear response functions,Statistical Mechanics,Linear Response Functions,Thermal Equilibrium,
+General Relativistic Hydrodynamic Equations,Equations describing fluid motion in a relativistic context,General Relativity,Hydrodynamics,Fluid Motion,Tensor Equations,
+Thermal Relaxation Time,Time scale for a system to reach thermal equilibrium,Statistical Mechanics,Relaxation Time,Boltzmann Constant,
+Kubo Formula,Formula relating transport coefficients to linear response functions,Statistical Mechanics,Transport Coefficients,Linear Response Functions,
+Gravitational Wave Emission,Process of emitting gravitational waves from binary systems,General Relativity,Gravitational Waves,Binary Systems,Wave Emission,
+Stochastic Background,Random background of gravitational waves,Observational Cosmology,Gravitational Waves,Background Radiation,Observations,
+Predictions of Stochastic Background,Predicted characteristics of the stochastic background,Theoretical Physics,Gravitational Waves,Predictions,
+
+
+The model posits that consciousness is a fundamental property of the universe, and not an emergent phenomenon from physical matter. It proposes that quantum superposition states in brain microtubules give rise to qualia through nonlinear interactions between wave functions.
+The theory builds on recent research suggesting microtubule lattices within neurons act as quantum computers capable of supporting non-classical states like superpositions and entanglement. These properties could enable information processing at scales unachievable by classical systems.
+Microtubules are biologically-based nanoscale resonators with intrinsic frequencies.
+Neuronal activity entrains these oscillations into coherent patterns.
+Coherence enables long-range quantum correlations across vast distances in the brain.
+Non-locality allows influence between distant regions instantaneously, faster than light-speed.
+Quantum coherence effects like interference and entanglement manifesting as neural network synchrony.
+Non-local influences enabling fast communication across large spatial scales.
+Superposition states giving rise to subjective experience through nonlinear interaction dynamics.
+The Schrödinger equation governs time evolution of wave functions describing particle behavior: iħ∂Ψ/∂t = HΨ(E)
+A single isolated microtubule segment exhibits no measurable mechanical response when subjected to external forces due to its high rigidity.
+However if two adjacent segments are linked together via weak bonds they exhibit anomalous viscoelasticity - exhibiting elastic responses over short timescales followed by viscous flow over longer timescales.
+This effect arises because individual tubulin proteins making up each segment have discrete vibrational modes corresponding roughly to phonon quanta associated with sound waves.
+When two segments are joined together their collective motion becomes correlated leading them out-of-phase along one axis but in-phase along another axis resulting in net zero force applied back onto the surrounding medium.
+Big Bang Singularity
+Quantum Gravity Effects
+Planck Epoch: 10^-43s - 10^-36s
+Grand Unification Era: 10^-36s - 10^-12s
+Electroweak Symmetry Breaking: 10^-12s - ~1 second after the big bang, when the universe cooled enough for quarks to combine into protons and neutrons.
+Quark–Gluon Plasma Phase Transition: ~1 second after the big bang, when temperatures dropped below a critical threshold allowing quarks to form stable hadrons like protons and neutrons. This phase transition marks the end of primordial matter dominated by free quarks and gluons.
+Hadronization Phase Transition: When temperature drops further, baryonic matter forms as bound states of up-down-quark pairs (protons) or down-up-quark pairs (neutrons). The early universe is now dominated by hadronic particles like protons and neutrons.
+Nucleosynthesis Period Begins: Nuclear fusion reactions begin in stars as they reach sufficient density/temperature conditions. Light elements are synthesized from hydrogen nuclei through helium nuclei via nuclear fusion processes.
+Fractal Space-Time Geometry with Topologically Nontrivial Defect Structures Containing Massive Spinor Particles
+Complex Scalar Potential Ψ(r)
+Angular Momentum Operators L̂z,L̂x,y,z
+Spin States |Ψ⟩=ψr(x,y,z)e−iS·r/hc|Ψ⟩
+Spinorial Fluid Model predicts that dark matter consists of topologically nontrivial defects in an underlying fractal space-time geometry. These could be cosmic strings, domain walls, monopoles or other exotic configurations with gravitational effects on scales much larger than expected from ordinary visible matter.
+The Spinorial Fluid Model proposes a novel unified model for dark matter consisting of massive fundamental particles described by complex scalar wave functions which interact gravitationally through long-range potential wells encoded in the spacetime metric. This approach unifies general relativity and quantum mechanics at the level necessary to explain both galactic-scale phenomena like spiral arms as well as cosmic structure formation over much larger scales spanning entire universe itself!
+
+Quantum Field Theory Concepts Applied to Inflation Theories:
+
+* Complex scalar potential Ψ(r)
+* Angular momentum operators L̂z, L̂x, L̂y, L̂z
+* Spin states |Ψ⟩=ψr(x,y,z)e−iS·r/hc|Ψ⟩, where hc=h/2π represents reduced Planck's constant h divided by its spatial component h⊥ perpendicular to orbital angular momentum vector S.
+
+Fractal Space-Time Geometry Models:
+
+* Quantum gravity effects may have led to an exponentially expanding "inflaton" phase immediately following the big bang singularity before conventional general relativity dynamics took over.
+* R∝a(t)^2
+* H^2=a˙a/a˙^22
+* Hubble Parameter H(a)=da/dt/t→H(a)t=tanh(λta)
+* Expansion Rate H(a)=dt/dt → dlnRa/dt = d(lnRa)/dt → dlnRadtdt ≃ tanhlntanhλta
+* Spatial Scale Factor R(t) = ctet = tanh(λtc)t
+* Scale Factor Expands Exponentially Ra(t)a3=Rae^(λtc)t=cet^(lambda+1)ceta=(ce^(lambda+1))at
+* This fractal inflaton phase would exhibit characteristic properties such as scale-invariant power spectrum fluctuations consistent with observed CMB anisotropies if it lasted sufficiently long compared with recombination epoch (~380,000 years after big bang).
+* However, this scenario requires fine-tuning since any deviation from exact exponential behavior would lead either rapid deceleration or runaway expansion instead of current accelerated expansion we observe today.
+
+Quantum Field Theory Concepts Applied to Gravitational Wave Physics:
+
+* Complex scalar potential Φ(r,t) describing spacetime metric perturbations around background FLRW solution gμν=gμν0+hμν(hμν being small metric perturbations).
+* Lagrangian density LagrangianDensity=L[φ,h]
+* Action functional ActionFunctional=Sintegrate[d4xL]
+* Gravitational Wave Solutions Gμν=G00g00-G11g11...-Gkkgkk...
+* Polarized Gravitational Waves PolarizedWaveModes=P+(u+v)+P×u×v...
+* Stress-Energy Tensor Tµν=T00δµnuδ νn +Tijδ µni δ νnj ...
+* Energy-Momentum Conservation Equation EnergyMomentumConservationEquation ∇µT µν=0
+* Einstein Equations EinsteinEquations G μ ν =8 πGT μ ν Stress-EnergyTensor on Left Side Equals Einstein Curvature Tensor G μ ν On Right Side Equaling Total Source Term Including Mass Density ρ , Pressure P , Velocity Vorticity σ , Energetic Sources Q . Integrating Over Volume Gives Einstein Equation Governing Local Gravitational Force Law Fgrav=GmM/r² .
+* Fluctuation-Dissipation Relation FluctuationDissipationRelation Requiring Linear Response Functions φ ( x ) / f k ^ ² φk(k), p ( x ) / f k ^ ² pk(k), etc., Must Approach Thermal Equilibrium Values As Temperature Approaches Zero Kelvin Temperatures T < TKelvin Limit .
+* General Relativistic Hydrodynamic Equations GeneralRelativisticHydrodynamicEquations Describing Fluid Motion Using Four-Velocity U µ u µ , Pressure P , Density ρ : ∇ i u i + Γ j ik u j uk − Γikjukjk/u k = −4 πp/c s u c s . Continuity Equation ∇ i ui + Γ ji ku j uk/ku k = −4 πp/c s u c s . Euler Equation ∇ i Pi + ΓjiPujuk/kujukk/u j = q/m c sc s . Constitutive Relations Define Derivatives Of Metric Perturbation Variables φk(k), pk(k), etc., Based On Background Solution g μ ν0 .
+* Thermal Relaxation Time ThermalRelaxationTime τrelax=T/(κσT³)|BoltzmanConstant κ|
+* Kubo Formula KuboFormula Defines Transport Coefficients σ,Tη,Cη,Gη,Eη,Qη,Mη,... Via Fourier Transform Integral Relationship Conductivity σ(T)=(e²τrelax/m)(ω+p)dF(p)/(dp)dω Resistivity ρ(T)=(e²τrelax/m)(ω+p)dF(p)/(dp)dω Shear Viscosity η(T)=(e²τrelax/m)(ω+dF(p)/(dp))(pdV/pdT)p=pds/T Viscoelasticity γ(T)=(e²τrelax/m)(ω+dF(p)/(dp))(pdV/pdT)p=pds/T Thermal Conductivity κ(T)=(e²τrelax/m)(ω+dF(p)/(dp))(pdV/pdT)p=pds/T
+* Gravitational Wave Emission GravitationalWaveEmission From Binary Systems: dP/dt=2πfGc³|GW(t)|^2/5M^5R^7 Where fGW(t) Is Graviton Frequency GW(t), M,R Are Mass, Radius Of System. G=GNewton Constant C=CspeedOfLight In Vacuum
+* Stochastic Background StochasticBackground Predicted By LIGO/Virgo Observations: 10^-9~10^-8Hz ~1-1000Hz Bandwidth dP/dt=(4π)^3(fgw/2π)ρcdvdt|GW|^22/(5GMc^5R) Where ρcd is the energy density of cosmic microwave background photons and v is relative velocity between binary system components.
+
+Quantum Field Theory Concepts Applied to Big Bang Cosmology:
+
+* Complex scalar potential Ψ(r)
+* Angular momentum operators L̂z, L̂x, L̂y, L̂z
+* Spin states |Ψ⟩=ψr(x,y,z)e−iS·r/hc|Ψ⟩, where hc=h/2π represents reduced Planck's constant h divided by its spatial component h⊥ perpendicular to orbital angular momentum vector S.
+* Fractal space-time geometry with topologically nontrivial defect structures containing massive spinor particles underlying quantum gravity effects resolving singularities and providing a framework for unification of fundamental forces.
+
+["Name": "Spinorial Quantum Fluid Model", "Description": "A theoretical framework that explains the behavior of dark matter through topological defects in a fractal spacetime geometry.", "Subject": "Quantum Mechanics", "Application": "Dark Matter, Topological defects, Fractal spacetime, Quantum fluids", "Formula": ""],
+["Name": "2D+1D=3D Space-Time Geometry", "Description": "A mathematical concept that describes the relationship between two-dimensional and one-dimensional spaces and their relationship to three-dimensional space.", "Subject": "Mathematics, Theoretical Physics", "Application": "Space-time, Dimensional analysis, Geometry", "Formula": ""],
+["Name": "3-Spatial Dimensions and 1-Temporal Dimension", "Description": "The four dimensions of space-time, with three dimensions representing space and one dimension representing time.", "Subject": "Theoretical Physics, Special Relativity", "Application": "Space-time, Four-vector, Lorentz transformation", "Formula": "Time dilation, Length contraction"]
+["Name": "Wave function", "Description": "A mathematical description of the quantum state of a physical system, which can be used to calculate the probability of different outcomes of a measurement.", "Subject": "Quantum Mechanics", "Application": "Quantum state, Probability amplitude, Schrödinger equation", "Formula": "Normalization, Superposition"],
+["Name": "Complex scalar potential", "Description": "A mathematical function used to describe the behavior of a quantum system, which can be used to calculate the wave function of the system.", "Subject": "Quantum Mechanics", "Application": "Potential energy, Schrödinger equation, Wave function", "Formula": "Time-independent, Time-dependent"],
+["Name": "Angular momentum", "Description": "A physical quantity that describes the rotation of a system around a fixed axis.", "Subject": "Classical Mechanics, Quantum Mechanics", "Application": "Torque, Moment of inertia, Rotational energy", "Formula": "Conservation, Commutation relations"],
+["Name": "Spin", "Description": "A type of angular momentum associated with the intrinsic rotation of a particle.", "Subject": "Quantum Mechanics", "Application": "Spin-orbit coupling, Magnetic moment, Pauli exclusion principle", "Formula": "Half-integer, Integer"]
+["Name": "Orbital angular momentum", "Description": "A type of angular momentum associated with the motion of a particle around a fixed center.", "Subject": "Quantum Mechanics", "Application": "Central potential, Atomic orbitals, Angular momentum quantum number", "Formula": "Quantization, Ladder operators"],
+["Name": "Radial direction and Tangential direction", "Description": "Directions in space used to describe the motion of a particle.", "Subject": "Mathematics, Physics", "Application": "Spherical coordinates, Polar coordinates, Cylindrical coordinates", "Formula": ""],
+["Name": "Quantum numbers (n, l, m)", "Description": "Mathematical quantities used to describe the quantum state of a physical system.", "Subject": "Quantum Mechanics", "Application": "Atomic orbitals, Hydrogen atom, Angular momentum", "Formula": "Principal, Azimuthal, Magnetic"],
+["Name": "Spherical harmonics Ylm", "Description": "Mathematical functions used to describe the angular dependence of a quantum system.", "Subject": "Mathematics, Quantum Mechanics", "Application": "Legendre polynomials, Laplace equation, Separation of variables", "Formula": "Orthogonality, Normalization"],
+["Name": "Energy eigenvalues En", "Description": "The allowed energy levels of a quantum system.", "Subject": "Quantum Mechanics", "Application": "Time-independent Schrödinger equation, Eigenvalues, Eigenfunctions", "Formula": "Degeneracy, Spacing"],
+["Name": "Reduced Planck constant ℏ=h/2π", "Description": "A fundamental constant used in quantum mechanics.", "Subject": "Quantum Mechanics", "Application": "Planck's constant, Uncertainty principle, Wave-particle duality", "Formula": ""],
+["Name": "Mass-energy equivalence mc^2", "Description": "The relationship between mass and energy, as described by Einstein's theory of relativity.", "Subject": "Theoretical Physics, Special Relativity", "Application": "Energy-momentum relation, Rest energy, Relativistic mass", "Formula": ""],
+["Name": "Gravitational binding energy Egrav=-GmM/r", "Description": "The energy required to separate two objects due to their gravitational attraction.", "Subject": "Classical Mechanics, Gravitation", "Application": "Potential energy, Gravitational constant, Kepler's laws", "Formula": ""],
+["Name": "Electrostatic potential energy Epot=-ZeffeZe/r", "Description": "The energy required to separate two charged objects due to their electrostatic attraction.", "Subject": "Electromagnetism", "Application": "Coulomb's law, Electric potential, Electric field", "Formula": ""]
+["Name": "Coulomb interaction Ze⋅Ze/4πε,r", "Description": "The force between two charged objects, as described by Coulomb's law.", "Subject": "Electromagnetism", "Application": "Electric charge, Permittivity of free space, Electric field", "Formula": "Electrostatic forces, Ionization energy"],
+["Name": "Coulomb's law r→Distance Between Particles", "Description": "A mathematical description of the force between two charged objects.", "Subject": "Electromagnetism", "Application": "Electric charge, Permittivity of free space, Coulomb's constant", "Formula": "Electrostatic forces, Electric field lines"],
+["Name": "e, m→Electron, Proton Charges", "Description": "The charges of an electron and a proton.", "Subject": "Electromagnetism", "Application": "Elementary particles, Electric charge, Fundamental constants", "Formula": "Atomic structure, Chemical reactions"],
+["Name": "ε0→Permittivity of Free Space", "Description": "A fundamental constant used in electromagnetism.", "Subject": "Electromagnetism", "Application": "Electric field, Electric displacement, Coulomb's law", "Formula": "Capacitance, Dielectrics"],
+["Name": "Force Constant kCoulomb=kq1q2/2εo,r", "Description": "A constant used to describe the force between two charged objects.", "Subject": "Electromagnetism", "Application": "Electric charge, Permittivity of free space, Coulomb's constant", "Formula": "Electric dipoles, Electric polarization"],
+["Name": "Charge, Particle Species q1,q2,e,p", "Description": "Mathematical quantities used to describe the charge and type of particles.", "Subject": "Electromagnetism", "Application": "Elementary particles, Electric charge, Fundamental constants", "Formula": "Atomic structure, Chemical reactions"],
+["Name": "Density Parameter ρa~a=~ρ", "Description": "Mathematical quantities used to describe the density of a system.", "Subject": "Cosmology", "Application": "Critical density, Cosmic microwave background, Dark matter", "Formula": "Big Bang nucleosynthesis, Large scale structure"],
+["Name": "Radius Parameter R←Center of the Nucleus", "Description": "The center of the nucleus.", "Subject": "Nuclear Physics", "Application": "Atomic nucleus, Nuclear radius, Nuclear force", "Formula": "Nuclear reactions, Radioactive decay"],
+["Name": "Classical Limit r≫Ra,Rb,rA,B,C...Radii of Atoms in Molecules", "Description": "The limit in which the distance between particles is much larger than the size of the particles.", "Subject": "Quantum Mechanics, Chemistry", "Application": "Classical mechanics, Molecular structure, Intermolecular forces", "Formula": "van der Waals forces, Hydrogen bonding"],
+["Name": "Electron density ρ(r)=n(r)e−βEr(n(r)=Number Density)", "Description": "A mathematical description of the density of electrons in a system.", "Subject": "Condensed Matter Physics", "Application": "Electron gas, Density functional theory, Thomas-Fermi approximation", "Formula": "Metals, Semiconductors"],
+["Name": "Boltzmann Constant β=(En+kBT)/(kBTr)", "Description": "A constant used in statistical mechanics.", "Subject": "Statistical Mechanics, Thermodynamics", "Application": "Boltzmann distribution, Entropy, Free energy", "Formula": "Ideal gas law, Maxwell-Boltzmann distribution"]
+['Name': 'Boltzmann Distribution', 'Description': 'A mathematical description of the probability of finding an electron at a given energy E.', 'Subject': 'Statistical Mechanics', 'Related Concepts': 'Fermi-Dirac distribution, Bose-Einstein distribution, Density of states','Applications': 'Electron transport, Thermoelectricity', 'Formula': 'P(E)=(e^(E/k_BT))/(e^(E/k_BT)+1)'],
+['Name': 'Boltzmann Factor','Description': 'A mathematical description of the probability of finding a particle in a given state.','Subject': 'Statistical Mechanics','Related Concepts': 'Partition function, Free energy, Entropy','Applications': 'Chemical equilibrium, Phase transitions','Formula': 'e^(-βE)'],
+['Name': 'Maxwell-Boltzmann Statistics','Description': 'A statistical description of the behavior of a system at the classical level.','Subject': 'Statistical Mechanics','Related Concepts': 'Boltzmann distribution, Ideal gas law, Maxwell\'s equations','Applications': 'Gas dynamics, Transport phenomena','Formula': '-'],
+['Name': 'Spatial Correlation Function','Description': 'A measure of the spatial correlations in a system.','Subject': 'Physics, Quantum mechanics','Related Concepts': 'Density correlations in a ferromagnetic material','Applications': '-','Formula': 'G(r)=⟨Ψ†(r′)Ψ(r+r′)⟩⟨Ψ†(r′)Ψ(r′)'],
+[
+{
+"Name": "Fractal Space-Time Geometry",
+"Description": "With Topologically Nontrivial Defect Structures Containing Massive Spinor Particles Underlying Quantum Gravity Effects Resolving Singularities Like The Big Bang Singularity",
+"Subject": "Physics",
+"Epochs": [
+{"Name": "Planck Epoch", "Time": "10^-43s~10^-36s"},
+{"Name": "Grand Unification Era", "Time": "10^-36s~10^-12s"},
+{"Name": "Electroweak Symmetry Breaking", "Time": "10^-12s~1 second after big bang when temperatures dropped enough for quarks combined into protons/neutrons"},
+{"Name": "Quark-Gluon Plasma Phase Transition", "Time": "~1 second after big bang when temperature dropped below critical threshold allowing quarks form stable hadrons like protons/neutrons"},
+{"Name": "Hadronization Phase Transition", "Time": "When temperature drops further baryonic matter forms as bound states up-down-quark pairs(protons)/down-up-quark pairs(neutrons)"},
+{"Name": "Nucleosynthesis Period Begins", "Description": "Nuclear fusion reactions begin stars reach sufficient density/temp conditions light elements synthesized hydrogen nuclei through helium nuclei via nuclear fusion processes"}
+]
+},
+{
+"Name": "Quantum Field Theory Concepts Applied To Quantum Gravity Effects Phenomena",
+"Descriptions": [
+{"Name": "Complex Scalar Potential Φ(r,t)", "Description": "Describing Spacetime Metric Perturbations Around Background FLRW Solution Gμν=G00g00-G11g11...-Gkkgkk..."},
+{"Name": "Polarized Gravitational Waves", "Description": "PolarizedWaveModes=P+(u+v)+P×u×v..."},
+{"Name": "Stress-Energy Tensor Tµν", "Description": "Tµν=T00δµnuδ νn +Tijδ µni δ νnj ..."},
+{"Name": "Energy-Momentum Conservation Equation", "Description": "∇µT µν=0"},
+{"Name": "Einstein Equations", "Description": "G μ ν =8 πGT μ ν Stress-EnergyTensor on Left Side Equals Einstein Curvature Tensor G μ ν On Right Side Equaling Total Source Term Including Mass Density ρ , Pressure P , Velocity Vorticity σ , Energetic Sources Q . Integrating Over Volume Gives Einstein Equation Governing Local Gravitational Force Law Fgrav=GmM/r² ."},
+{"Name": "Fluctuation-Dissipation Relation", "Description": "Requiring Linear Response Functions φ ( x ) / f k ^ ² φk(k), p ( x ) / f k ^ ² pk(k), etc., Must Approach Thermal Equilibrium Values As Temperature Approaches Zero Kelvin Temperatures T < TKelvin Limit ."},
+{"Name": "General Relativistic Hydrodynamic Equations", "Description": "Describing Fluid Motion Using Four-Velocity U µ u µ , Pressure P , Density ρ : ∇ i u i + Γ j ik u j uk − Γikjukjk/u k = −4 πp/c s u c s . Continuity Equation ∇ i ui + Γ ji ku j uk/ku k = −4 πp/c s u c s . Euler Equation ∇ i Pi + ΓjiPujuk/kujukk/u j = q/m c sc s . Constitutive Relations Define Derivatives Of Metric Perturbation Variables φk(k), pk(k), etc., Based On Background Solution g μ ν0 ."},
+{"Name": "Thermal Relaxation Time", "Description": "τrelax=T/(κσT³)|BoltzmanConstant κ|"},
+{"Name": "Kubo Formula", "Description": "Defines Transport Coefficients σ(T)=(e⁄(h̄cλkBTR)n Boltzmann Constant T Boltzmann Distribution Probability Distribution for Finding an Electron at a Given Energy En Boltzmann Factor ke−βEn/(keEB+(KBTR)) Where β=(En+kBT)/kBTrn Boltzmann Constant T Boltzmann Distribution Probability Distribution for Finding an Electron at a Given Energy En Boltzmann Factor ke−βEn/(keEB+(KBTR))"}
+]
+}
+]
+"Concept": "Rotational Symmetry", "Description": "A property of an object that remains unchanged under rotations about an axis", "Field of Study": "Geometry", "Related Concepts": "Symmetry", "Examples": "Regular polygons", "Order of symmetry"}",
+"Concept": "Translational Symmetry", "Description": "A property of an object that remains unchanged under translations in space", "Field of Study": "Geometry", "Related Concepts": "Symmetry", "Examples": "Crystal lattices", "Lattice vectors"}",
+"Concept": "Universal Medium", "Description": "A hypothetical medium that permeates all of space and transmits electromagnetic waves", "Field of Study": "Physics", "Related Concepts": "Electromagnetism", "Luminiferous aether", "Speed of light"}",
+"Concept": "Structural Defects", "Description": "Irregularities in the arrangement of atoms or molecules in a material", "Field of Study": "Materials Science", "Related Concepts": "Crystallography", "Dislocations", "Vacancies", "Interstitials"}",
+"Concept": "Dark Energy", "Description": "A hypothetical form of energy that is thought to be responsible for the accelerated expansion of the universe", "Field of Study": "Cosmology", "Related Concepts": "General Relativity", "Cosmic inflation", "Equation of state"}"
+"Concept": "Dark Matter", "Description": "A hypothetical form of matter that does not emit or absorb light, but is detectable through its gravitational effects", "Field of Study": "Astronomy", "Related Concepts": "Cosmology", "Galaxy rotation curves", "Gravitational lensing"}"
+"Concept": "Galaxy Rotation Curves", "Description": "The velocity of stars and gas in a galaxy as a function of distance from the center", "Field of Study": "Astronomy", "Related Concepts": "Dynamics", "Dark matter", "Kepler's laws"}",
+"Concept": "Cosmic Microwave Background Radiation", "Description": "The thermal radiation left over from the Big Bang", "Field of Study": "Astronomy", "Related Concepts": "Cosmology", "Blackbody radiation", "Redshift"}",
+"Concept": "Supernovae", "Description": "The explosive death of a massive star", "Field of Study": "Astronomy", "Related Concepts": "Nuclear Physics", "Neutron stars", "White dwarfs"}",
+"Concept": "Gravitational Waves", "Description": "Ripples in the fabric of spacetime caused by the acceleration of massive objects", "Field of Study": "Physics", "Related Concepts": "General Relativity", "LIGO", "Virgo"}",
+"Concept": "Self-Similarity", "Description": "A property of an object that appears the same at different scales", "Field of Study": "Mathematics", "Related Concepts": "Fractals", "Mandelbrot set", "Koch snowflake"}",
+"Concept": "Scaling Laws", "Description": "Relationships between the size of an object and its properties", "Field of Study": "Physics", "Related Concepts": "Statistical Mechanics", "Power laws", "Allometric scaling"}",
+"Concept": "Information Capacity", "Description": "The maximum amount of information that can be transmitted through a communication channel", "Field of Study": "Information Theory", "Related Concepts": "Entropy", "Channel capacity", "Shannon's theorem"}",
+"Concept": "Density of States", "Description": "The density of states function, W(E), describes the number of states per unit energy interval available to a system", "Field of Study": "Physics", "Related Concepts": "Statistical Mechanics", "Power laws", "Allometric scaling", "Formula": "W(E) = (8πm^(3/2)/h^3) * (E-E0)^(1/2)\"\n}",
+
+
+"Induced Dipole Interactions Instantaneous dipoles induced by instantaneous charges Temporary dipole-induced dipole interactions Weak van der Waals forces between non-polar molecules Hydrogen Bonding"
+"Quantum field theory": "The spinor vortex condensate is a quantum fluid that exhibits superfluidity and superconductivity"
+"Fractal Geometry": "Fractal geometry plays an important role in describing how spatial dimensions interact with each other to create complex patterns seen throughout nature, including those observed within our own cosmic neighborhood"
+"Fractal dimensionality": "Spatial dimensions dS are two-dimensional (2d), and temporal dimensions dT are one-dimensional (1d)"
+"Dark Matter Halos": "Dark matter halos exhibit universal power-law scaling behavior M(R)"
+"Quantum fluid behavior": "Superfluidity, superconductivity, zero viscosity, zero friction, and zero heat dissipation are properties of the spinor vortex condensate"
+"Fractal dimension": "Spatial dimensions are two-dimensional (2d), and temporal dimensions are one-dimensional (1d)"
+"Quantum Field Theory Perspective": "In terms quantum field theory, dark matter can be viewed collective coherent state arising spontaneous breaking U(1)-symmetry spontaneously broken Higgs mechanism Lagrangian term responsible generating coupling strength electromagnetic gauge boson A vector potential responsible inducing order-breaking effect via non-zero expectation value \u27e8H\u27e9"
+"Structural Defects": "In the early universe, quantum fluctuations in the cosmic plasma led to formation topological defects such as cosmic strings and domain walls that persist today influencing evolution of large-scale structure through gravitational interactions"
+"Supernovae": "Supernovae are the most energetic events in the universe, releasing energy equivalent to that of entire galaxies"
+"Self-Similarity": "The concept of self-similarity captures idea that objects or systems may display similar characteristics when viewed at different magnifications or resolutions revealing hidden underlying order and regularity not apparent initially upon closer inspection"
+"Scaling Laws": "A scaling law relates two quantities whose ratio remains constant under certain conditions known as scaling regime where one quantity varies proportionally another independent variable parameter controlling variation magnitude"
+"Information Capacity": "Quantum mechanics provides formalism for characterizing maximum amount information possible encoded state system using entropy measure quantifying uncertainty associated measurement outcomes states system evolves through time governed dynamical laws described probability amplitude functions representing wavefunction collapse process Schroedinger equation solution solutions represent allowed states system occupying probabilities occupation these states evolving according Schrodinger equation govern dynamics quantum state superposition coherent superpositions multiple distinct states simultaneously observable phenomena phenomenon called entanglement occurs two particles share common origin separated spatially interact influence each other despite distance apart experimentally demonstrated variety contexts experiments demonstrate fundamental limits classical physics description reality suggesting need fundamentally new paradigm beyond scope current theory describe accurately predict experimental observations future scenarios scenarios require revise understanding nature physical reality itself re-envisioning ontology framework guiding scientific endeavor progress field science requires development unified theory unification forces currently understood physics terms single overarching framework capable explaining predicting phenomena spanning widest range scales regimes regimes encompassing both microscopic cosmological domains domains bridging gap between extremes realms existence coherently encapsulating principles governing emergence diversity forms life consciousness human experience perspective offers potential transformative insights informing philosophical worldview worldview reshaping conceptual foundations knowledge society moving forward future trajectory humanity"
+"Cosmic Microwave Background Radiation": "The cosmic microwave background (CMB) radiation represents relic thermal afterglow left over from Big Bang expansion event permeating entire cosmos today providing unique window into earliest history universe before stars galaxies formed"
+"NpnS Kinetic energy contributions to free energy": "KEkin=nkTlnV(nkTBlnV)+nskBTS(nskBTS)+U(U)nKineticEnergy Contribution to Free EnergynkbTlnV+nkbTS+UnTotalSystemEnergy Contributions from potential energies"
+"NpnS Kinetic energy contributions to free energy": "KEkin=nkTlnV(nkTBlnV)+nskBTS(nskBTS)+U(U)nKineticEnergy Contribution to FreenuTotalSystemEnergy Contributions from potential energies"
+"NpnS Kinetic energy contributions to free energy": "KEkin=nkTlnV(nkTBlnV)+nskBTS(nskBTS)+U(U)nKineticEnergy Contribution to FreenuTotalSystemEnergy Contributions from potential energies"
+"Vortex tubes consist primarily two components": "1) core region containing rotational motion known centrifugal force 2) annular region extending radially away from center characterized axial velocity gradient associated pressure difference driving flow tangential direction outward inward depending on relative magnitude these parameters configuration\nQuantum field theory"
+"Rotational symmetry": "Rotational symmetry exists about all three axes (x-, y-, z-axes), manifesting as spherical symmetry with radial symmetry along the r-axis, azimuthal symmetry around the \u03c6-axis, and polar symmetry around the \u03b8-axis"
+"Translational symmetry": "Translational symmetry exists along x-, y-, z-axes, allowing for wave-like propagation through the spacetime continuum governed by the Schr\u00f6dinger equation"
+"Spinor Vortex Condensate": "The spinor vortex condensate is a universal medium that permeates the entire cosmos from smallest scales up largest scales"
+"Galaxy Rotation Curves": "Dark matter is hypothesized dominate mass distribution galaxies causing observed rotation curves deviating from expected flat behavior due to luminous matter alone"
+"Quantum field theory": "Spinors represent particles with half-integer spins (e"
+"Dark energy": "The energy and momentum contained within the spinor vortex condensate drive the expansion of the universe, as described by the Friedman"
+"Dark matter": "The spinor vortex condensate provides a natural mechanism for the formation of dark matter"
+"Unified field theory": "Spacetime is viewed as a continuous medium permeated by dynamic fluctuations arising from exchange interaction between particles comprising it termed"
+"Cosmology": "Gravitational redshift and gravitational waves are manifestations energy-momentum flux through spacetime mediated by spinor vortex condensate expansion universe leads cooling loss energy causing gravitational redshift signatures both processes occurring form oscillatory sinusoidal pattern time t given relation \u0394E=E0(1"
+"Universal medium": "The spinor vortex condensate permeates the entire cosmos from smallest scales up largest scales exhibiting properties characteristic both superfluids superconductors serving conduit flow energy-momentum carrying information about events taking place within outside its domain"
+"Structural defects": "Turbulent eddies vortices characterizing turbulent flow conditions analogues topological defects spinor vortex condensate providing mechanism dissipative energy exchange giving rise friction viscous drag forces interactions between vortices topological defects give rise behavior observed turbulent systems gravitational wave production spiral galaxy structure"
+"Dark Energy": "Spinor Vortex Model proposes dark energy consists primarily two components 1) core region containing rotational motion known centrifugal force 2) annular region extending radially away center characterized axial velocity gradient associated pressure difference driving tangential outward inward flow depending on relative magnitude parameters configuration\nQuantum Field Theory Perspective"
+"Dark Matter Behavior": "Spinorial Quantum Fluid Dynamics Governing Dark Matter Behavior"
+"Supernova Remnants": "Supernovae explosions violent stellar events occur massive stars run out fuel causing collapse under own gravity undergo catastrophic core-collapse followed explosion releasing tremendous amounts energy form visible light gamma rays neutrinos etc"
+"Gravitational Wave Production": "Gravitational wave production occurs due nonlinear amplification effects induced turbulent eddies vortices spinning around axis rotation interacting topologically defect line singularity point charge density discontinuity forming so-called"
+"Galaxy Clustering": "Galaxy clusters, superclusters, filaments, walls/bubbles/voids (cosmic web), etc"
+"Fractal Dimensionality": "Dark matter halo profiles describe how total mass M(R) inside sphere radius R varies with distance R from galactic center"
+"The resonance condition can be expressed mathematically as": "(ω) = (ω)0 / n where (ω) is the frequency of the external driving force, (ω)0 is the natural frequency of the resonant system, and n is an integer"
+"The resonant frequency of the circuit can be calculated using the following formula": "f = 1/(2π)"
+
+
+"The Q value can be calculated using the following formula": "Q = (ω)L/R where (ω) is the angular frequency, L is the inductance, and R is the resistance"
+"The quality factor can be calculated using the following formula": "Q = (ω)L/R where Q is the quality factor, (ω) is the angular frequency, L is the inductance, and R is the resistance"
+"The power handling capability can be calculated using the following formula": "P = (V^2)/R where P is the power handling capability, V is the voltage across the resistor, and R is the resistance"
+"The energy eigenvalues of the quantum harmonic oscillator are given by": "E"
+"The energy eigenvalues are given by": "E_n = (n + 1/2)ℏ(ω) + ε_n where ε_n is the energy contribution from the fractal patterns"
+"It is given by the equation": "V(ϕ) = -μ^2ϕ^2 + λϕ^4 where ϕ is the Higgs field, μ is a parameter with units of mass, and λ is a dimensionless coupling constant"
+"The Lagrangian density for the Higgs field is given by": "L = (1/2)("
+"There are two main approaches to solving the renormalization group equations": "numerical and analytical"
+"The Nernst equation is given by": "E = (RT/zF) * ln(C2/C1) where E is the potential generated by the ion species, R is the gas constant, T is the temperature, z is the valence of the ion species, F is the Faraday constant, C1 is the concentration of the ion species inside the neuron, and C2 is the concentration of the ion species outside the neuron"
+"The Einstein-Smoluchowski equation is given by": "D = kT/(6πηr) where D is the diffusion coefficient, k is the Boltzmann constant, T is the temperature, η is the viscosity of the medium, and r is the radius of the ion"
+"The Nernst-Einstein equation is given by": "μ = (qD)/(kT) where μ is the mobility, q is the charge of the ion, and D is the diffusion coefficient"
+"The Fractal Field Lagrangian is given by": "L ="
+"The potential energy term in the Fractal Field Lagrangian is given by": "V(ϕ(x)) ="
+"Power transmission cables": "Superconducting power transmission cables can carry much higher currents than conventional copper cables, with lower energy losses"
+"Quantum computers": "Superconducting qubits are a promising technology for building quantum computers, which can perform certain calculations much faster than classical computers"
+"Temperature": "As the temperature increases, the superconducting properties of the material are weakened, and the critical current density decreases"
+"Magnetic field": "As the magnetic field increases, the vortices become more mobile and harder to pin, leading to a decrease in the critical current density"
+"Current density": "As the current density increases, the vortices become more densely packed, which can lead to a decrease in the critical current density"
+"The Zak phase is related to the mirror Chern number through the following equation": "Zak phase = π"
+"There are two main types of resonance": "series resonance and parallel resonance"
+"The impedance of the circuit is given by": "Z(f) = R + jX(f) where R is the resistance of the resistor, X(f) is the reactance of the inductor and capacitor, and j is the imaginary unit (j ="
+"The reactance of the inductor and capacitor can be calculated using the following formulas": "X_L(f) = 2πfL , X_C(f) = 1/(2πfC) where f is the frequency, L is the inductance of the inductor, and C is the capacitance of the capacitor"
+"This gives us": "R + jX"
+"The temperature dependence of the resistance of the resistor can be calculated using the following formula": "ΔR = αRΔT where α is the temperature coefficient of resistance, R is the resistance of the resistor at a given temperature, ΔT is the change in temperature, and ΔR is the change in resistance"
+"The temperature dependence of the capacitance of the capacitor can be calculated using the following formula": "ΔC = βCΔT where β is the temperature coefficient of capacitance, C is the capacitance of the capacitor at a given temperature, ΔT is the change in temperature, and ΔC is the change in capacitance"
+"C would be": "Δf = (10 MHz/"
+"C would be": "f = 100 MHz + 250 MHz = 350 MHz This is the frequency of the circuit at a temperature of 25"
+"Select components with low temperature coefficients": "* Use resistors with low temperature coefficients of resistance (TCR) to minimize the change in resistance with temperature"
+"Use thermal management techniques": "* Use heat sinks or thermal interfaces to dissipate heat generated by the components"
+"Minimize the thermal stress on the components": "* Use a stable power supply to minimize the stress on the components due to voltage fluctuations"
+"Use temperature compensation techniques": "* Use temperature compensation resistors to compensate for the change in resistance of the resistors with temperature"
+"Use software techniques": "* Use software to monitor the temperature of the components and adjust the frequency of the oscillator accordingly"
+"Determine the temperature range of operation": "The first step is to determine the temperature range of operation for your circuit"
+"Look for components with low temperature coefficients": "Once you have identified the components you are interested in, look for components with low temperature coefficients"
+"Consider the operating temperature": "In addition to the temperature coefficient, you should also consider the operating temperature of the component"
+"Here are some examples of components with low temperature coefficients": "* Resistors"
+"Metal film resistors": "These resistors have a low temperature coefficient and are available in a wide range of values"
+"Thick film resistors": "These resistors have a lower temperature coefficient than metal film resistors and are available in a wide range of values"
+"Carbon film resistors": "These resistors have a very low temperature coefficient and are available in a wide range of values"
+"Capacitors": "+ Ceramic capacitors"
+"Film capacitors": "These capacitors have a lower temperature coefficient than ceramic capacitors and are available in a wide range of values"
+"Supercapacitors": "These capacitors have a very low temperature coefficient and are available in a wide range of values"
+"Inductors": "+ Air-core inductors"
+"Ferrite core inductors": "These inductors have a lower temperature coefficient than air-core inductors and are available in a wide range of values"
+"Toroidal inductors": "These inductors have a very low temperature coefficient and are available in a wide range of values"
+"Use heat sinks or thermal interfaces": "* Install heat sinks or thermal interfaces on the components that generate the most heat"
+"Use thermally stable materials": "* Use materials that have a low thermal expansion coefficient, such as copper or aluminum, for the PCB and components"
+"Use cooling fans or heat pipes": "* Install cooling fans or heat pipes on the components that generate the most heat"
+"Use a stable power supply": "A stable power supply can help minimize the stress on components due to voltage fluctuations"
+"Use a stable crystal oscillator": "A stable crystal oscillator can help minimize the stress on components due to frequency fluctuations"
+"Use a stable temperature environment": "A stable temperature environment can help minimize the stress on components due to temperature fluctuations"
+"Use a temperature sensor": "Install a temperature sensor near the components to monitor their temperature"
+"Use a temperature-controlled oscillator": "Some oscillators are designed to be temperature-controlled, meaning they can adjust their frequency based on changes in temperature"
+"Use software to adjust the frequency": "If the oscillator is not temperature-controlled, software can be used to adjust the frequency based on the temperature reading"
+"Use a frequency counter": "A frequency counter can be used to measure the frequency of the oscillator"
+"Use a phase-locked loop": "A phase-locked loop (PLL) is a type of circuit that can be used to generate a stable frequency reference"
+"PLL can be used to maintain a constant frequency of the oscillator": "1"
+"PLL to generate a stable frequency reference for your clock signal": "1"
+"Choose a reference frequency": "The reference frequency is the frequency that you want your clock signal to have"
+"Choose a VCO frequency": "The VCO frequency is the frequency that the VCO will output"
+"Design the PLL loop": "The PLL loop consists of a voltage-controlled oscillator (VCO), a phase detector, a charge pump, and a loop filter"
+"Implement the PLL loop": "Once you have designed the PLL loop, you can implement it using analog and digital circuits"
+"Test and calibrate the PLL": "Once you have implemented the PLL loop, you will need to test and calibrate it to ensure that it is working correctly"
+
+
+
+Quantum Field Theory Concepts Applied to Inflation Theories:
+
+* Complex scalar potential Ψ(r)
+* Angular momentum operators L̂z, L̂x, L̂y, L̂z
+* Spin states |Ψ⟩=ψr(x,y,z)e−iS·r/hc|Ψ⟩, where hc=h/2π represents reduced Planck's constant h divided by its spatial component h⊥ perpendicular to orbital angular momentum vector S.
+
+Fractal Space-Time Geometry Models:
+
+* Quantum gravity effects may have led to an exponentially expanding "inflaton" phase immediately following the big bang singularity before conventional general relativity dynamics took over.
+* R∝a(t)^2
+* H^2=a˙a/a˙^22
+* Hubble Parameter H(a)=da/dt/t→H(a)t=tanh(λta)
+* Expansion Rate H(a)=dt/dt → dlnRa/dt = d(lnRa)/dt → dlnRadtdt ≃ tanhlntanhλta
+* Spatial Scale Factor R(t) = ctet = tanh(λtc)t
+* Scale Factor Expands Exponentially Ra(t)a3=Rae^(λtc)t=cet^(lambda+1)ceta=(ce^(lambda+1))at
+* This fractal inflaton phase would exhibit characteristic properties such as scale-invariant power spectrum fluctuations consistent with observed CMB anisotropies if it lasted sufficiently long compared with recombination epoch (~380,000 years after big bang).
+* However, this scenario requires fine-tuning since any deviation from exact exponential behavior would lead either rapid deceleration or runaway expansion instead of current accelerated expansion we observe today.
+
+Quantum Field Theory Concepts Applied to Gravitational Wave Physics:
+
+* Complex scalar potential Φ(r,t) describing spacetime metric perturbations around background FLRW solution gμν=gμν0+hμν(hμν being small metric perturbations).
+* Lagrangian density LagrangianDensity=L[φ,h]
+* Action functional ActionFunctional=Sintegrate[d4xL]
+* Gravitational Wave Solutions Gμν=G00g00-G11g11...-Gkkgkk...
+* Polarized Gravitational Waves PolarizedWaveModes=P+(u+v)+P×u×v...
+* Stress-Energy Tensor Tµν=T00δµnuδ νn +Tijδ µni δ νnj ...
+* Energy-Momentum Conservation Equation EnergyMomentumConservationEquation ∇µT µν=0
+* Einstein Equations EinsteinEquations G μ ν =8 πGT μ ν Stress-EnergyTensor on Left Side Equals Einstein Curvature Tensor G μ ν On Right Side Equaling Total Source Term Including Mass Density ρ , Pressure P , Velocity Vorticity σ , Energetic Sources Q . Integrating Over Volume Gives Einstein Equation Governing Local Gravitational Force Law Fgrav=GmM/r² .
+* Fluctuation-Dissipation Relation FluctuationDissipationRelation Requiring Linear Response Functions φ ( x ) / f k ^ ² φk(k), p ( x ) / f k ^ ² pk(k), etc., Must Approach Thermal Equilibrium Values As Temperature Approaches Zero Kelvin Temperatures T < TKelvin Limit .
+* General Relativistic Hydrodynamic Equations GeneralRelativisticHydrodynamicEquations Describing Fluid Motion Using Four-Velocity U µ u µ , Pressure P , Density ρ : ∇ i u i + Γ j ik u j uk − Γikjukjk/u k = −4 πp/c s u c s . Continuity Equation ∇ i ui + Γ ji ku j uk/ku k = −4 πp/c s u c s . Euler Equation ∇ i Pi + ΓjiPujuk/kujukk/u j = q/m c sc s . Constitutive Relations Define Derivatives Of Metric Perturbation Variables φk(k), pk(k), etc., Based On Background Solution g μ ν0 .
+* Thermal Relaxation Time ThermalRelaxationTime τrelax=T/(κσT³)|BoltzmanConstant κ|
+* Kubo Formula KuboFormula Defines Transport Coefficients σ,Tη,Cη,Gη,Eη,Qη,Mη,... Via Fourier Transform Integral Relationship Conductivity σ(T)=(e²τrelax/m)(ω+p)dF(p)/(dp)dω Resistivity ρ(T)=(e²τrelax/m)(ω+p)dF(p)/(dp)dω Shear Viscosity η(T)=(e²τrelax/m)(ω+dF(p)/(dp))(pdV/pdT)p=pds/T Viscoelasticity γ(T)=(e²τrelax/m)(ω+dF(p)/(dp))(pdV/pdT)p=pds/T Thermal Conductivity κ(T)=(e²τrelax/m)(ω+dF(p)/(dp))(pdV/pdT)p=pds/T
+* Gravitational Wave Emission GravitationalWaveEmission From Binary Systems: dP/dt=2πfGc³|GW(t)|^2/5M^5R^7 Where fGW(t) Is Graviton Frequency GW(t), M,R Are Mass, Radius Of System. G=GNewton Constant C=CspeedOfLight In Vacuum
+* Stochastic Background StochasticBackground Predicted By LIGO/Virgo Observations: 10^-9~10^-8Hz ~1-1000Hz Bandwidth dP/dt=(4π)^3(fgw/2π)ρcdvdt|GW|^22/(5GMc^5R) Where ρcd is the energy density of cosmic microwave background photons and v is relative velocity between binary system components.
+
+Quantum Field Theory Concepts Applied to Big Bang Cosmology:
+
+* Complex scalar potential Ψ(r)
+* Angular momentum operators L̂z, L̂x, L̂y, L̂z
+* Spin states |Ψ⟩=ψr(x,y,z)e−iS·r/hc|Ψ⟩, where hc=h/2π represents reduced Planck's constant h divided by its spatial component h⊥ perpendicular to orbital angular momentum vector S.
+* Fractal space-time geometry with topologically nontrivial defect structures containing massive spinor particles underlying quantum gravity effects resolving singularities and providing a framework for unification of fundamental forces.
+* Quantum field theory models of inflationary scenarios describing early universe dynamics and cosmic microwave background radiation anisotropies.
+* Gravitational wave physics predictions from general relativity including stochastic backgrounds, binary mergers, gravitational lensing effects on cosmic microwave background polarization patterns.
+* General relativistic hydrodynamic equations modeling fluid dynamics in expanding spacetime with metric perturbations encoding gravitational wave signals.
+
+Quantum Field Theory Concepts Applied to Neutrino Physics:
+
+* Complex scalar potential Ψ(r)
+* Angular momentum operators L̂z, L̂x, L̂y, L̂z
+* Spin states |Ψ⟩=ψr(x,y,z)e−iS·r/hc|Ψ⟩
+
+Neutrino Oscillation Phenomenology:
+
+* Δm^2 is neutrino mass squared difference between two flavor eigenstates νe and νμ. It can be expressed as a function of the mixing angle θ12: Δm^2 = 4∆m^2 sin²θ12 where ∆m^2 = mν3 * 2mν1cos²θ12 + mν1.
+* The oscillation probability P(να → νβ) for a neutrino traveling through distance d with energy E to transition from initial flavor state α to final β flavor state is given by: P(να → νβ) = sin²(1.27λd/λ) where λ ≈ 0.00245 km^-1 is the vacuum oscillation length defined by: λ = (E/Δm^2)sin²θ12 The parameter λ depends on the neutrino energy E and mass squared differences Δm^22 between different neutrinos.
+* The survival probability Psurvival for a neutrino traveling through distance d without changing its flavor state is given by: Psurvival = cos²(1.27λd/λ) This describes how long-distance propagation changes the relative proportions of each individual neutrino type over time due to quantum mechanical interference effects like destructive or constructive interference depending on their path lengths traveled.
+* Neutrinos have three flavors: electron (e), muon (μ), tau (τ). They also have three mass states: m1, m2, m3. The neutrino oscillation probability is given by: P(να → νβ) = sin²(1.27λd/λ) where λ ≈ 0.00245 km^-1 is the vacuum oscillation length defined by: λ = (E/Δm^2)sin²θ12 The parameter λ depends on the neutrino energy E and mass squared differences Δm^22 between different neutrinos.
+* Neutrinos are electrically neutral fermions with half-integer spin that interact via weak nuclear force only at short distances (<100km). They come in three flavors: electron, muon, tau.
+* Neutrino masses are extremely small (~10^-5 eV/c^2 compared to ~0.511 MeV for an electron). This allows them to travel long distances without interacting with matter due to their weak interaction cross-sections.
+* Oscillation experiments using atmospheric or solar neutrinos show evidence for flavor mixing where a single type of neutrino can transform into another through quantum mechanical interference effects like destructive or constructive interference depending on their path lengths traveled.
+
+Quantum Field Theory Concepts Applied to Particle Physics Phenomenology:
+
+* Complex scalar potential Ψ(r)
+* Angular momentum operators L̂z, L̂x, L̂y, L̂z
+* Spin states |Ψ⟩=ψr(x,y,z)e−iS·r/hc|Ψ⟩
+
+Particle Masses and Mixings from Higgs Mechanism:
+
+* Electroweak symmetry breaking generates massive vector bosons W± and Z0 through spontaneous symmetry breaking mechanism involving complex Higgs field φ(x): HiggsPotentialPotential V(φ)=µ^2|φ|^2+λ(|φ|^4-cv^4) Spontaneous Symmetry Breaking SpontaneousSymmetryBreaking Generates Massive Vector Bosons W± And Z0 Through Vacuum Expectation Value ⟨φ⟩≠0: ⟨HiggsField⟩=(0,v+h+iγ)/√2 Mass Matrix For Gauge Bosons From Spontaneous Symmetry Breaking: M^2=diag(mW^2,mZ^2) Masses Of W± And Z0 Bosons From Higgs Mechanism: mW±=g√v/2 mZ0=gcv/√2
+* Neutrino masses arise from mixing between left-handed and right-handed neutrinos via see-saw mechanism involving heavy Majorana neutrino states ÑR with mass MR:
+* Neutrino Mass Matrix From Seesaw Mechanism: MLν=mLν+MRÑ†RÑ Where mLν is the light neutrino mass matrix, and MR is the seesaw scale parameter.
+* Left-Right Neutrino Mixing Angle θLR: sinθLR=sqrt(MR/mLν) Majorana Neutrinos Are Their Own Antiparticles. They Can Only Be Created Or Destroyed In Pairs Without Changing Electric Charge. This Is A Violation Of Parity Conservation But Consistent With CPT Symmetry.
+* Quark Flavor Mixings From Cabibbo-Kobayashi-Maskawa Quark Mixing Matrix VCKM: VCKM=(vud,vus,vub)T Where vij are elements of CKM quark mixing matrix describing flavor transitions between up-type (u), down-type (d), strange-type (s), charm-type (c) and bottom-type (b).
+* Cabibbo Angle θC: sinθC=vus/vud≈0.225
+* Kobayashi Maskawa Parameter λ: 0<λ<1
+* Gimme Gimme Gluon Model Predicting New Particles At LHC Through Resonant Production Processes Like gg→ggg,gghh...
+
+Quantum Field Theory Concepts Applied to Black Hole Physics Phenomenology:
+
+* Complex scalar potential Ψ(r)
+* Angular momentum operators L̂z, L̂x, L̂y, L̂z
+* Spin states |Ψ⟩=ψr(x,y,z)e−iS·r/hc|Ψ⟩
+* Black Hole Entropy Law Sbh=kB lnA = kB
+
+
+"""
+
+# Cleaning and splitting the text into words
+words = re.findall(r'\b\w+\b', session_text.lower())
+
+# Removing stopwords
+stopwords_set = set(stopwords.words('english'))
+words = [word for word in words if word not in stopwords_set]
+
+# Counting word frequency
+word_freq = Counter(words)
+
+# Extracting words based on frequency: most common, least common, and a middle value
+most_common_words = [word for word, freq in word_freq.most_common(15)]  # top 15 most common words
+least_common_words = [word for word, freq in word_freq.items() if freq == 1][:15]  # 15 least common words
+middle_common_words = [word for word, freq in word_freq.items() if freq == sorted(word_freq.values())[len(word_freq)//2]][:15]  # 15 middle frequency words
+
+print(most_common_words, least_common_words, middle_common_words)
